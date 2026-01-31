@@ -1,15 +1,143 @@
 % Lattice of Complexity for Zero Ontology
 % Constructs partial order of complexity across languages and implementations
+% EXTENDED: Hyperpolyglot + Multramate unification via Monster primes
 
 :- module(complexity_lattice, [
     complexity_measure/3,
     lattice_order/2,
     construct_lattice/1,
-    visualize_lattice/0
+    visualize_lattice/0,
+    prime_harmonic/4,
+    concept/4,
+    multramate_concept/3,
+    unify_concepts/4,
+    concepts_at_prime/2,
+    multramate_connects/3,
+    measure_file_complexity/2
 ]).
 
 :- dynamic complexity_measure/3.
 :- dynamic lattice_order/2.
+
+% Monster primes
+monster_prime(P) :- monster_exponent(P, _).
+
+% ============================================================================
+% MONSTER PRIME HARMONICS (432 Hz base)
+% ============================================================================
+
+prime_harmonic(2, 864, binary_moon, '🌓').
+prime_harmonic(3, 1296, binary_moon, '🔺').
+prime_harmonic(5, 2160, binary_moon, '⭐').
+prime_harmonic(7, 3024, binary_moon, '🎰').
+prime_harmonic(11, 4752, binary_moon, '🎸').
+prime_harmonic(13, 5616, wave_crest, '🌙').
+prime_harmonic(17, 7344, wave_crest, '🎯').
+prime_harmonic(19, 8208, wave_crest, '🎭').
+prime_harmonic(23, 9936, wave_crest, '🧬').
+prime_harmonic(29, 12528, wave_crest, '📅').
+prime_harmonic(31, 13392, deep_resonance, '🎃').
+prime_harmonic(41, 17712, deep_resonance, '🔮').
+prime_harmonic(47, 20304, deep_resonance, '🎲').
+prime_harmonic(59, 25488, deep_resonance, '⏰').
+prime_harmonic(71, 30672, deep_resonance, '🌊').
+
+monster_exponent(2, 46).
+monster_exponent(3, 20).
+monster_exponent(5, 9).
+monster_exponent(7, 6).
+monster_exponent(11, 2).
+monster_exponent(13, 3).
+monster_exponent(17, 1).
+monster_exponent(19, 1).
+monster_exponent(23, 1).
+monster_exponent(29, 1).
+monster_exponent(31, 1).
+monster_exponent(41, 1).
+monster_exponent(47, 1).
+monster_exponent(59, 1).
+monster_exponent(71, 1).
+
+% ============================================================================
+% HYPERPOLYGLOT CONCEPTS → PRIME MAPPING
+% ============================================================================
+
+concept(integer_arithmetic, 2, elementary, arithmetic).
+concept(modular_arithmetic, 2, elementary, number_theory).
+concept(prime_testing, 3, polynomial, number_theory).
+concept(factorization, 3, exponential, number_theory).
+concept(cyclic_groups, 5, elementary, group_theory).
+concept(chinese_remainder, 5, polynomial, number_theory).
+concept(permutations, 7, exponential, group_theory).
+concept(factorial, 7, exponential, combinatorics).
+concept(group_order, 11, polynomial, group_theory).
+concept(multiplicative_order, 11, polynomial, number_theory).
+concept(subgroups, 13, exponential, group_theory).
+concept(primitive_roots, 13, polynomial, number_theory).
+concept(symmetric_groups, 17, exponential, group_theory).
+concept(discrete_log, 17, exponential, number_theory).
+concept(homomorphisms, 19, polynomial, group_theory).
+concept(elliptic_curves, 23, polynomial, algebraic_geometry).
+concept(group_actions, 29, polynomial, group_theory).
+concept(character_theory, 31, exponential, representation_theory).
+concept(representations, 41, exponential, representation_theory).
+concept(probabilistic_primality, 47, polynomial, number_theory).
+concept(polynomial_factorization, 59, exponential, algebra).
+concept(sporadic_groups, 71, exponential, group_theory).
+concept(moonshine, 71, exponential, representation_theory).
+
+% ============================================================================
+% MULTRAMATE CONTRIBUTIONS
+% ============================================================================
+
+multramate_concept(weierstrass_equations, 23, elliptic_curves).
+multramate_concept(group_law_elliptic, 23, elliptic_curves).
+multramate_concept(torsion_points, 3, elliptic_curves).
+multramate_concept(torsion_points, 5, elliptic_curves).
+multramate_concept(torsion_points, 11, elliptic_curves).
+multramate_concept(mordell_weil, 5, elliptic_curves).
+multramate_concept(height_functions, 71, elliptic_curves).
+multramate_concept(modular_forms, 71, moonshine).
+multramate_concept(galois_representations, 31, character_theory).
+multramate_concept(affine_coordinates, 23, elliptic_curves).
+multramate_concept(jacobian_coordinates, 23, elliptic_curves).
+multramate_concept(pairing_crypto, 23, elliptic_curves).
+multramate_concept(finite_fields, 3, galois_theory).
+
+% ============================================================================
+% UNIFICATION RULES
+% ============================================================================
+
+% Concepts unify if they share prime and category
+unify_concepts(ConceptA, ConceptB, Prime, Category) :-
+    concept(ConceptA, Prime, _, Category),
+    concept(ConceptB, Prime, _, Category),
+    ConceptA \= ConceptB.
+
+% Multramate connects to hyperpolyglot concept
+multramate_connects(MulConcept, HyperConcept, Prime) :-
+    multramate_concept(MulConcept, Prime, Domain),
+    concept(HyperConcept, Prime, _, Category),
+    (Domain = HyperConcept ; Category = Domain).
+
+% Concepts at a given prime
+concepts_at_prime(Prime, Concepts) :-
+    findall(C, concept(C, Prime, _, _), Concepts).
+
+% Concepts in harmonic class
+harmonic_class_members(Class, Members) :-
+    findall(Prime-Emoji, prime_harmonic(Prime, _, Class, Emoji), Members).
+
+% ============================================================================
+
+% Extension to language mapping
+extension_to_language(pl, prolog).
+extension_to_language(lean, lean4).
+extension_to_language(agda, agda).
+extension_to_language(v, coq).
+extension_to_language(hs, haskell).
+extension_to_language(rs, rust).
+extension_to_language(py, python).
 
 % Complexity dimensions
 complexity_dimension(lines_of_code).
@@ -25,8 +153,9 @@ measure_file_complexity(File, Complexity) :-
     format('File: ~w~n', [File]),
     nl,
     
-    % Detect language
-    detect_language_from_file(File, Lang),
+    % Detect language from extension
+    file_name_extension(_, Ext, File),
+    extension_to_language(Ext, Lang),
     
     % Measure each dimension
     measure_lines_of_code(File, LOC),
@@ -68,11 +197,11 @@ measure_lines_of_code(File, LOC) :-
     length(CodeLines, LOC).
 
 is_empty_or_comment(Line) :-
-    string_trim(Line, Trimmed),
-    (   Trimmed = ""
-    ;   sub_string(Trimmed, 0, _, _, "%")
-    ;   sub_string(Trimmed, 0, _, _, "--")
-    ;   sub_string(Trimmed, 0, _, _, "//")
+    (   Line = ""
+    ;   sub_string(Line, 0, _, _, "%")
+    ;   sub_string(Line, 0, _, _, "--")
+    ;   sub_string(Line, 0, _, _, "//")
+    ;   sub_string(Line, 0, _, _, "#")
     ).
 
 % Measure cyclomatic complexity
@@ -224,7 +353,7 @@ construct_lattice(Lattice) :-
     nl,
     
     % Measure all files
-    findall(File, found_copy(_, File, verified), Files),
+    expand_file_name('*.{pl,lean,agda,v,hs,rs}', Files),
     forall(member(File, Files), measure_file_complexity(File, _)),
     
     % Build partial order

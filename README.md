@@ -175,6 +175,7 @@ See [PROGRAM_INDEX.md](PROGRAM_INDEX.md) for complete catalog:
 - **Image generation** - diffusion-rs with I ARE LIFE experiment
 - **LLM tracing** - Register resonance analysis
 - **LMFDB translation** - Bisimulation proofs
+- **Hyperpolyglot** - Computer algebra system reference (see [HYPERPOLYGLOT_INTEGRATION.md](HYPERPOLYGLOT_INTEGRATION.md))
 
 ### Proof Index
 See [MonsterLean/MonsterLean/ProofIndex.lean](MonsterLean/MonsterLean/ProofIndex.lean) for all formal proofs:

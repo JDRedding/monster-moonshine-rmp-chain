@@ -6006,3 +6006,218 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 05:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   ingest.log
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	commit_reviews_9a368b1d.json
+	review_9a368b1d.json
+	zkp_perf_9a368b1d.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 06:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   datasets/precedence_survey/citations.json
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   ingest.log
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	commit_reviews_9a368b1d.json
+	review_9a368b1d.json
+	zkp_perf_9a368b1d.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 07:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   datasets/precedence_survey/citations.json
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   ingest.log
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	commit_reviews_9a368b1d.json
+	review_9a368b1d.json
+	zkp_perf_9a368b1d.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Fri Jan 30 08:00:01 PM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Cargo.toml
+	modified:   README.md
+	modified:   datasets/precedence_survey/citations.json
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   ingest.log
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	HYPERPOLYGLOT_INTEGRATION.md
+	HYPERPOLYGLOT_LATTICE.md
+	clone_multramate.sh
+	commit_reviews_9a368b1d.json
+	commit_reviews_c079a86e.json
+	review_9a368b1d.json
+	review_c079a86e.json
+	src/bin/extract_hyperpolyglot.rs
+	src/bin/hyperpolyglot_lattice.rs
+	src/bin/parse_computer_algebra.rs
+	zkp_perf_9a368b1d.circom
+	zkp_perf_c079a86e.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete

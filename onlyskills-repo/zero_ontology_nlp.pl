@@ -5,7 +5,9 @@
     nlp_analyze/2,
     introspect_search/1,
     semantic_similarity/3,
-    extract_concepts/2
+    extract_concepts/2,
+    introspect_file_native/2,
+    introspect_all_found_files/0
 ]).
 
 % NLP Analysis of search results

@@ -1,5 +1,6 @@
 // GPU-accelerated Monster DAO: 2^46 members × 3^20 categories on GPU
 use std::time::Instant;
+use std::iter::repeat;
 
 // Monster primes
 const MONSTER_PRIMES: [u64; 15] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71];
@@ -54,7 +55,7 @@ fn hash_category(index: u32) -> u64 {
     // Ternary decomposition hash
     let mut hash = 0u64;
     let mut n = index;
-    for i in 0..20 {
+    for _i in 0..20 {
         let digit = n % 3;
         hash = hash.wrapping_mul(3).wrapping_add(digit as u64);
         n /= 3;
@@ -144,7 +145,7 @@ fn gpu_stream_compute(total_members: u64, total_categories: u32, batch_size: u64
 
 fn main() {
     println!("🎮 GPU-Accelerated Monster DAO");
-    println!("=" .repeat(70));
+    println!("{}", "=".repeat(70));
     println!();
     
     // Constants

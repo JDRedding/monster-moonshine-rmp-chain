@@ -8,6 +8,7 @@
 ]).
 
 :- use_module(library(clpfd)).
+:- use_module(library(filesex)).
 
 % Monster primes
 monster_prime(2).
@@ -37,8 +38,8 @@ search_premise_problems(Problems) :-
     writeln('=========================================='),
     nl,
     
-    % Find all code files
-    findall(File, code_file(File), Files),
+    % Find all code files in current directory
+    expand_file_name('*.{pl,lean,agda,v,hs,rs}', Files),
     length(Files, Count),
     format('Scanning ~w files...~n~n', [Count]),
     
@@ -57,10 +58,19 @@ search_premise_problems(Problems) :-
 
 % Code file patterns
 code_file(File) :-
-    (   found_copy(_, File, verified)
-    ;   file_introspection(File, _)
-    ;   complexity_measure(File, _, _)
+    (   exists_file(File),
+        file_name_extension(_, Ext, File),
+        code_extension(Ext)
     ).
+
+% Code file extensions
+code_extension(pl).
+code_extension(lean).
+code_extension(agda).
+code_extension(v).
+code_extension(hs).
+code_extension(rs).
+code_extension(py).
 
 % Find premise problems in file
 find_premise_problems_in_file(File, Problem) :-

@@ -40,6 +40,10 @@ name = "knuth_search_lattice"
 path = "src/bin/knuth_search_lattice.rs"
 
 [[bin]]
+name = "syn_ingestion"
+path = "src/bin/syn_ingestion.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 
@@ -91,6 +95,8 @@ path = "src/bin/topological_genus.rs"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 walkdir = "2.4"
+syn = { version = "2.0", features = ["full", "visit"] }
+quote = "1.0"
 sha2 = "0.10"
 polars = { version = "0.36", features = ["parquet"] }
 memmap2 = "0.9"

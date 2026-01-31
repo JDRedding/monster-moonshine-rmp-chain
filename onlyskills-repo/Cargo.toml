@@ -52,6 +52,10 @@ name = "turtle_generator"
 path = "src/bin/turtle_generator.rs"
 
 [[bin]]
+name = "universal_mapper"
+path = "src/bin/universal_mapper.rs"
+
+[[bin]]
 name = "prime_tower_sorter"
 path = "src/bin/prime_tower_sorter.rs"
 

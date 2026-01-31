@@ -26,11 +26,8 @@ fn main() {
 
 fn search_parquet_file(path: &str, patterns: &[&str]) {
     // Read parquet file
-    let df = match LazyFrame::scan_parquet(path, Default::default()) {
-        Ok(lf) => match lf.collect() {
-            Ok(df) => df,
-            Err(_) => return,
-        },
+    let df = match ParquetReader::new(std::fs::File::open(path).unwrap()).finish() {
+        Ok(df) => df,
         Err(_) => return,
     };
     

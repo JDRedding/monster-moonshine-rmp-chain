@@ -48,6 +48,10 @@ name = "unified_monster_system"
 path = "src/bin/unified_monster_system.rs"
 
 [[bin]]
+name = "prime_tower_sorter"
+path = "src/bin/prime_tower_sorter.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 

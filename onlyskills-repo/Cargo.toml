@@ -52,6 +52,10 @@ name = "prime_tower_sorter"
 path = "src/bin/prime_tower_sorter.rs"
 
 [[bin]]
+name = "zkprolog_erdf_export"
+path = "src/bin/zkprolog_erdf_export.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 

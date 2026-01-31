@@ -44,6 +44,10 @@ name = "syn_ingestion"
 path = "src/bin/syn_ingestion.rs"
 
 [[bin]]
+name = "unified_monster_system"
+path = "src/bin/unified_monster_system.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 

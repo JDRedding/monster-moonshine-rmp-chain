@@ -48,6 +48,11 @@
 - **[COMPUTATIONAL_OMNISCIENCE.md](COMPUTATIONAL_OMNISCIENCE.md)** - Theoretical framework
 - **[I_ARE_LIFE_EXACT.md](I_ARE_LIFE_EXACT.md)** - Image generation experiment
 
+## 📝 Session Documentation
+
+- **[SESSION_7_SUMMARY.md](SESSION_7_SUMMARY.md)** - Optimal lattice & ZK proof (2026-01-30)
+- **[SESSION_6_SUMMARY.md](SESSION_6_SUMMARY.md)** - Complete integration (previous)
+
 ## 📁 Generated Reports
 
 ### Analysis Reports

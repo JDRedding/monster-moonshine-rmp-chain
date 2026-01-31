@@ -1,0 +1,19 @@
+digraph MonsterLattice {
+  rankdir=TB;
+  node [shape=box];
+
+  "lightning_git_search" [label="lightning_git_search\nC:387 S:32", fillcolor=lightgreen, style=filled];
+  "prime_tower_sorter" [label="prime_tower_sorter\nC:236 S:23", fillcolor=lightgreen, style=filled];
+  "knuth_search_lattice" [label="knuth_search_lattice\nC:386 S:31", fillcolor=lightgreen, style=filled];
+  "unified_monster_system" [label="unified_monster_system\nC:624 S:56", fillcolor=lightyellow, style=filled];
+  "syn_ingestion" [label="syn_ingestion\nC:350 S:66", fillcolor=lightgreen, style=filled];
+  "inode_zk_arrows" [label="inode_zk_arrows\nC:200 S:58", fillcolor=lightgreen, style=filled];
+  "zkprolog_erdf_export" [label="zkprolog_erdf_export\nC:300 S:16", fillcolor=lightgreen, style=filled];
+  "zk71_kernel_overlay" [label="zk71_kernel_overlay\nC:250 S:37", fillcolor=lightgreen, style=filled];
+  "setup_storage_overlay" [label="setup_storage_overlay\nC:50 S:50", fillcolor=lightblue, style=filled];
+
+  "lightning_git_search" -> "prime_tower_sorter" [label="5"];
+  "prime_tower_sorter" -> "knuth_search_lattice" [label="3"];
+  "unified_monster_system" -> "syn_ingestion" [label="10"];
+  "inode_zk_arrows" -> "zkprolog_erdf_export" [label="2"];
+}

@@ -28,6 +28,10 @@ name = "prolog_searcher"
 path = "src/bin/prolog_searcher.rs"
 
 [[bin]]
+name = "inode_zk_arrows"
+path = "src/bin/inode_zk_arrows.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 

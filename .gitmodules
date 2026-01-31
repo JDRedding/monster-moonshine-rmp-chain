@@ -28,3 +28,6 @@
 [submodule "references/PrincipiaMetaphysica"]
 	path = references/PrincipiaMetaphysica
 	url = https://github.com/andrewkwatts-maker/PrincipiaMetaphysica
+[submodule "hyperpolyglot"]
+	path = hyperpolyglot
+	url = https://github.com/clarkgrubb/hyperpolyglot.git

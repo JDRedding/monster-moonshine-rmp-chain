@@ -32,6 +32,14 @@ name = "inode_zk_arrows"
 path = "src/bin/inode_zk_arrows.rs"
 
 [[bin]]
+name = "lightning_git_search"
+path = "src/bin/lightning_git_search.rs"
+
+[[bin]]
+name = "knuth_search_lattice"
+path = "src/bin/knuth_search_lattice.rs"
+
+[[bin]]
 name = "shared_memory_index"
 path = "src/bin/shared_memory_index.rs"
 

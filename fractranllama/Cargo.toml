@@ -1,0 +1,30 @@
+[package]
+name = "fractranllama"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "token-encoder"
+path = "src/token_encoder.rs"
+
+[[bin]]
+name = "attention"
+path = "src/attention.rs"
+
+[[bin]]
+name = "inference"
+path = "src/inference.rs"
+
+[[bin]]
+name = "trace-decoder"
+path = "src/trace_decoder.rs"
+
+[[bin]]
+name = "text-decoder"
+path = "src/text_decoder.rs"
+
+[[bin]]
+name = "prove-mistral"
+path = "src/prove_mistral.rs"
+
+[dependencies]

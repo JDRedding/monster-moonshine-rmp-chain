@@ -15,4 +15,16 @@ path = "src/layer_71_omega.rs"
 name = "lattice"
 path = "src/lattice_runner.rs"
 
+[[bin]]
+name = "perf-compress"
+path = "src/bin/perf_compress_demo.rs"
+
+[[bin]]
+name = "fractran-to-code"
+path = "src/bin/fractran_to_code.rs"
+
+[[bin]]
+name = "symbol-analysis"
+path = "src/bin/symbol_analysis.rs"
+
 [dependencies]

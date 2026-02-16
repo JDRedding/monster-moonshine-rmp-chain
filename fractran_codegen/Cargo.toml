@@ -1,0 +1,18 @@
+[package]
+name = "fractran-codegen"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "instruction-encoder"
+path = "src/instruction_encoder.rs"
+
+[[bin]]
+name = "function-extractor"
+path = "src/function_extractor.rs"
+
+[[bin]]
+name = "binary-lattice"
+path = "src/binary_lattice.rs"
+
+[dependencies]

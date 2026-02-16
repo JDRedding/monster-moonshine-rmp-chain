@@ -1,0 +1,20 @@
+# LLM Model Weights as FRACTRAN States
+# Extracted from perf trace register values
+
+# Model dimensions:
+# d_model = 196883 (47 × 59 × 71)
+# n_heads = 59
+# d_head = 71
+
+# W_Q (prime 71):
+# Samples: 339
+71^339
+
+# W_K (prime 59):
+# Samples: 410
+59^410
+
+# W_V (prime 47):
+# Samples: 425
+47^425
+

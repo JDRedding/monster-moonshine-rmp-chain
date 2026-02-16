@@ -91113,3 +91113,62 @@ Time: 2026-02-16T13:00:03.654658250+00:00
  create mode 100755 perf_mod71_sample/target/release/perf-mod71-sample
  create mode 100644 perf_mod71_sample/target/release/perf-mod71-sample.d
 ✅ Ingestion complete
+🔥 Hourly Monster Ingestion: Mon Feb 16 09:00:01 AM EST 2026
+======================================================================
+/home/mdupont/experiments/monster/ingest_hourly.sh: line 10: cargo: command not found
+fatal: pathspec 'all_files_monster_shards.parquet' did not match any files
+🔍 PRE-COMMIT: Rust + Nix Review
+============================================================
+
+🦀 [1/5] Rust Enforcer (NO PYTHON)...
+✓ No Python
+
+🔨 [2/5] Building Rust tools...
+⚠️  Nix not available, skipping build
+
+📊 [3/5] Running precedence survey...
+✓ Precedence data collected
+
+💾 [4/5] Generating Parquet...
+✓ Review data: /tmp/review_data.json
+
+🔐 [5/5] Generating RDFa proof...
+✓ RDFa proof: 182 bytes
+
+============================================================
+✅ PRE-COMMIT APPROVED (Rust + Nix only)
+
+Summary:
+  Rust-only: ✓
+  Files changed: 0
+  Review data: /tmp/review_data.json
+
+🎯 Commit approved!
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   datasets/precedence_survey/citations.json
+	modified:   diffusion-rs (modified content, untracked content)
+	modified:   fractranllama/Cargo.toml
+	modified:   ingest.log
+	modified:   spectral (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	NEBUCHADNEZZAR.md
+	PROOF_COMPLETE.md
+	commit_reviews_bb6224f0.json
+	compressed_perf/
+	fractranllama/src/compress_all.rs
+	fractranllama/src/extract_weights.rs
+	fractranllama/src/nebuchadnezzar.rs
+	review_bb6224f0.json
+	zkp_perf_bb6224f0.circom
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✅ Ingestion complete

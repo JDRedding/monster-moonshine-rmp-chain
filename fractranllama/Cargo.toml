@@ -27,4 +27,16 @@ path = "src/text_decoder.rs"
 name = "prove-mistral"
 path = "src/prove_mistral.rs"
 
+[[bin]]
+name = "compress-all"
+path = "src/compress_all.rs"
+
+[[bin]]
+name = "extract-weights"
+path = "src/extract_weights.rs"
+
+[[bin]]
+name = "nebuchadnezzar"
+path = "src/nebuchadnezzar.rs"
+
 [dependencies]

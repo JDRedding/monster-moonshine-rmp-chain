@@ -1,0 +1,18 @@
+[package]
+name = "monster-71-lattice"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "layer0"
+path = "src/layer_00_foundation.rs"
+
+[[bin]]
+name = "layer71"
+path = "src/layer_71_omega.rs"
+
+[[bin]]
+name = "lattice"
+path = "src/lattice_runner.rs"
+
+[dependencies]

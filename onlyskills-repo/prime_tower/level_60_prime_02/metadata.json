@@ -1,0 +1,15 @@
+{
+  "level": 60,
+  "prime": 2,
+  "files": [
+    {
+      "path": "./src/bin/bisque_hunter.rs",
+      "functions": 1,
+      "structs": 5,
+      "enums": 0,
+      "complexity": 344
+    }
+  ],
+  "total_complexity": 344,
+  "avg_complexity": 344
+}

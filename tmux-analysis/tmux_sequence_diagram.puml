@@ -1,0 +1,11 @@
+@startuml
+title Tmux User Input Sequence
+
+user -> terminal : keystroke
+terminal -> event_loop : fd_ready(7)
+event_loop -> tmux_server : process_input
+tmux_server -> terminal : readv(7)
+tmux_server -> terminal : writev(7)
+terminal -> user : display
+
+@enduml

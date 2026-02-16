@@ -1,0 +1,15 @@
+{
+  "level": 66,
+  "prime": 17,
+  "files": [
+    {
+      "path": "./src/bin/repo_scanner.rs",
+      "functions": 5,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 137
+    }
+  ],
+  "total_complexity": 137,
+  "avg_complexity": 137
+}

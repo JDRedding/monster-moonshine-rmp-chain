@@ -1,0 +1,29 @@
+{
+  "level": 16,
+  "prime": 3,
+  "files": [
+    {
+      "path": "./process_analyzer.rs",
+      "functions": 1,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 87
+    },
+    {
+      "path": "./src/bin/duplicate_detector.rs",
+      "functions": 3,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 87
+    },
+    {
+      "path": "./src/bin/zkparquet_userspace_service.rs",
+      "functions": 4,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 158
+    }
+  ],
+  "total_complexity": 332,
+  "avg_complexity": 110
+}

@@ -1,0 +1,81 @@
+ZK71 Full Spectrum Sweep Report
+================================
+Query: search
+
+Storage Layers:
+  • shmem: Shared memory (primary)
+  • prolog: zkprologml-erdfa shards
+  • hdd: Disk storage
+
+Shard Distribution:
+  Shard  0 (prime  2): 1 layers
+  Shard  1 (prime  3): 1 layers
+  Shard  2 (prime  5): 1 layers
+  Shard  3 (prime  7): 1 layers
+  Shard  4 (prime 11): 1 layers
+  Shard  5 (prime 13): 1 layers
+  Shard  6 (prime 17): 1 layers
+  Shard  7 (prime 19): 1 layers
+  Shard  8 (prime 23): 1 layers
+  Shard  9 (prime 29): 1 layers
+  Shard 10 (prime 31): 1 layers
+  Shard 11 (prime 41): 1 layers
+  Shard 12 (prime 47): 1 layers
+  Shard 13 (prime 59): 1 layers
+  Shard 14 (prime 71): 1 layers
+  Shard 15 (prime  2): 1 layers
+  Shard 16 (prime  3): 1 layers
+  Shard 17 (prime  5): 1 layers
+  Shard 18 (prime  7): 1 layers
+  Shard 19 (prime 11): 1 layers
+  Shard 20 (prime 13): 1 layers
+  Shard 21 (prime 17): 2 layers
+  Shard 22 (prime 19): 1 layers
+  Shard 23 (prime 23): 1 layers
+  Shard 24 (prime 29): 1 layers
+  Shard 25 (prime 31): 1 layers
+  Shard 26 (prime 41): 1 layers
+  Shard 27 (prime 47): 1 layers
+  Shard 28 (prime 59): 1 layers
+  Shard 29 (prime 71): 1 layers
+  Shard 30 (prime  2): 1 layers
+  Shard 31 (prime  3): 1 layers
+  Shard 32 (prime  5): 1 layers
+  Shard 33 (prime  7): 1 layers
+  Shard 34 (prime 11): 1 layers
+  Shard 35 (prime 13): 1 layers
+  Shard 36 (prime 17): 1 layers
+  Shard 37 (prime 19): 1 layers
+  Shard 38 (prime 23): 1 layers
+  Shard 39 (prime 29): 1 layers
+  Shard 40 (prime 31): 1 layers
+  Shard 41 (prime 41): 1 layers
+  Shard 42 (prime 47): 1 layers
+  Shard 43 (prime 59): 1 layers
+  Shard 44 (prime 71): 1 layers
+  Shard 45 (prime  2): 1 layers
+  Shard 46 (prime  3): 1 layers
+  Shard 47 (prime  5): 1 layers
+  Shard 48 (prime  7): 1 layers
+  Shard 49 (prime 11): 1 layers
+  Shard 50 (prime 13): 1 layers
+  Shard 51 (prime 17): 1 layers
+  Shard 52 (prime 19): 1 layers
+  Shard 53 (prime 23): 1 layers
+  Shard 54 (prime 29): 1 layers
+  Shard 55 (prime 31): 1 layers
+  Shard 56 (prime 41): 1 layers
+  Shard 57 (prime 47): 1 layers
+  Shard 58 (prime 59): 1 layers
+  Shard 59 (prime 71): 1 layers
+  Shard 60 (prime  2): 1 layers
+  Shard 61 (prime  3): 1 layers
+  Shard 62 (prime  5): 2 layers
+  Shard 63 (prime  7): 1 layers
+  Shard 64 (prime 11): 1 layers
+  Shard 65 (prime 13): 1 layers
+  Shard 66 (prime 17): 1 layers
+  Shard 67 (prime 19): 2 layers
+  Shard 68 (prime 23): 1 layers
+  Shard 69 (prime 29): 1 layers
+  Shard 70 (prime 31): 1 layers

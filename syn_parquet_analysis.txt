@@ -1,0 +1,55 @@
+Formal Rust Syn + Parquet Analysis
+===================================
+
+Summary:
+  Total tools: 109
+  Uses syn: 2
+  Uses parquet: 25
+  Uses both: 1
+
+Top 20 Tools (by syn + parquet usage):
+--------------------------------------------------------------------------------
+Name                                        Syn  Parquet    Fns Structs    Score
+--------------------------------------------------------------------------------
+ 1. syn_parquet_analysis                  ✓  4    ✓   6      4      2     70.8
+ 2. extract_71_objects                    ✓  4        0      3      2     40.7
+ 3. model_all_columns                        0    ✓   3      1      0     15.1
+ 4. post_commit_review                       0        2      7      5     11.7
+ 5. zk71_kernel_overlay                      0    ✓   2      4      4     11.2
+ 6. vectorize_all_parquets                   0    ✓   2      7      2     11.1
+ 7. zk71_unified_fs                          0        2      6      2     11.0
+ 8. zk_to_gpu_shards                         0    ✓   2      4      1     10.6
+ 9. autolabel_filenames                      0    ✓   2      2      0     10.2
+10. bulk_all_layers                          0    ✓   2      1      0     10.1
+11. analyze_semantic_significance            0    ✓   1      9      4      6.7
+12. parquet_to_zkml                          0    ✓   1      8      3      6.4
+13. lmfdb_to_prolog                          0    ✓   1     12      1      6.4
+14. parquet_markov_pipeline                  0    ✓   1      8      3      6.4
+15. markov_parquet_shards                    0    ✓   1      8      2      6.2
+16. parquet_gpu_pipeline                     0    ✓   1      8      2      6.2
+17. monster_autoencoder                      0    ✓   1      8      1      6.0
+18. qwen_indexer                             0    ✓   1      5      2      5.9
+19. lmfdb_to_zkprolog_shards                 0    ✓   1      6      1      5.8
+20. zk71_full_spectrum_sweep                 0    ✓   1      5      1      5.7
+
+Syn-Only Tools (2):
+----------------------------------------
+  syn_parquet_analysis                4 uses
+  extract_71_objects                  4 uses
+
+Parquet-Only Tools (25):
+----------------------------------------
+  syn_parquet_analysis                6 uses
+  model_all_columns                   3 uses
+  zk71_kernel_overlay                 2 uses
+  vectorize_all_parquets              2 uses
+  zk_to_gpu_shards                    2 uses
+  autolabel_filenames                 2 uses
+  bulk_all_layers                     2 uses
+  analyze_semantic_significance       1 uses
+  parquet_to_zkml                     1 uses
+  lmfdb_to_prolog                     1 uses
+
+Both Syn + Parquet (1):
+----------------------------------------
+  syn_parquet_analysis                syn:4 pq:6

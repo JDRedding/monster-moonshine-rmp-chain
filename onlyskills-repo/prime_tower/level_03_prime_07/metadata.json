@@ -1,0 +1,15 @@
+{
+  "level": 3,
+  "prime": 7,
+  "files": [
+    {
+      "path": "./src/bin/layer1_bitmap.rs",
+      "functions": 3,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 216
+    }
+  ],
+  "total_complexity": 216,
+  "avg_complexity": 216
+}

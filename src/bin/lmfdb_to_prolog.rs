@@ -31,23 +31,29 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let base = Path::new("/home/mdupont/experiments/monster");
     let files = discover_lmfdb_files(base)?;
     
-    println!("📁 Found {} LMFDB files", files.len());
+    println!("📁 Found {} LMFDB files\n", files.len());
     
-    let mut prolog_out = fs::File::create("lmfdb_knowledge_base.pl")?;
+    let mut prolog_out = fs::File::create("prolog/lmfdb_knowledge_base.pl")?;
     write_header(&mut prolog_out)?;
     
+    let mut count = 0;
     for file in &files {
+        if count >= 10 {
+            println!("  ... (limiting to 10 files for now)");
+            break;
+        }
         println!("  Processing: {:?}", file.path.file_name().unwrap());
         match file.file_type {
             FileType::Json => ingest_json(&file, &mut prolog_out)?,
             FileType::Parquet => ingest_parquet(&file, &mut prolog_out)?,
             FileType::Markdown => ingest_markdown(&file, &mut prolog_out)?,
         }
+        count += 1;
     }
     
     write_footer(&mut prolog_out, &files)?;
     
-    println!("\n✅ Generated: lmfdb_knowledge_base.pl");
+    println!("\n✅ Generated: prolog/lmfdb_knowledge_base.pl");
     Ok(())
 }
 

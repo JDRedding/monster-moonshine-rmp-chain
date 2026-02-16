@@ -1,0 +1,15 @@
+{
+  "level": 8,
+  "prime": 23,
+  "files": [
+    {
+      "path": "./target/release/build/typenum-f2bf2444ea158f07/out/tests.rs",
+      "functions": 1743,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 37993
+    }
+  ],
+  "total_complexity": 37993,
+  "avg_complexity": 37993
+}

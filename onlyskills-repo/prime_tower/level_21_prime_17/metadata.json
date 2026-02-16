@@ -1,0 +1,15 @@
+{
+  "level": 21,
+  "prime": 17,
+  "files": [
+    {
+      "path": "./src/zkprologml_erdfa_abi.rs",
+      "functions": 5,
+      "structs": 2,
+      "enums": 0,
+      "complexity": 234
+    }
+  ],
+  "total_complexity": 234,
+  "avg_complexity": 234
+}

@@ -1,0 +1,136 @@
+Monster Tools Catalog
+====================
+Total: 108 tools
+
+
+Galois (8 tools):
+----------------------------------------
+  apply_value_lattice                         162 lines
+  galois_tower                                208 lines
+  galois_ziggurat                             296 lines
+  hyperpolyglot_lattice                       439 lines
+  lattice_qwen_witness                        144 lines
+  mathematical_object_lattice                 367 lines
+  prolog_lattice_lift                         161 lines
+  ten_fold_lattice                            277 lines
+
+GPU (7 tools):
+----------------------------------------
+  cpu_gpu_bridge                              316 lines
+  cuda_markov_bitwise                         242 lines
+  cuda_unified_pipeline                       308 lines
+  gpu_to_parquet                               26 lines
+  gpu_token_pipeline                          319 lines
+  hecke_burn_cuda                             197 lines
+  parquet_gpu_pipeline                        160 lines
+
+ZK (10 tools):
+----------------------------------------
+  p2p_zk_meme                                 124 lines
+  p2p_zk_meme_cuda                            108 lines
+  parquet_to_zkml                             171 lines
+  prolog_to_zk_reflection                      87 lines
+  zk71_integration_test                       240 lines
+  zk71_kernel_overlay                         205 lines
+  zk71_unified_fs                             200 lines
+  zk71_zone_quine                              57 lines
+  zk_lattice_archive                          196 lines
+  zk_llm                                      117 lines
+
+Search (2 tools):
+----------------------------------------
+  monster_search_factorized                   181 lines
+  zk71_full_spectrum_sweep                    181 lines
+
+Other (59 tools):
+----------------------------------------
+  analyze_multramate                          227 lines
+  analyze_semantic_significance               366 lines
+  archive_deploy                               98 lines
+  archive_plugin_test                         111 lines
+  autolabel_filenames                         113 lines
+  breadth_first_pipeline                      283 lines
+  bulk_all_layers                             108 lines
+  deploy_all                                  143 lines
+  division_preservation                       214 lines
+  expert_system                               193 lines
+  extract_71_objects                           89 lines
+  extract_constants                           183 lines
+  extract_hyperpolyglot                        87 lines
+  final_payment                               231 lines
+  generate_keywords                           385 lines
+  graded_ring_71                              134 lines
+  harmonic_folding                            136 lines
+  harmonic_wikidata_scanner                   227 lines
+  hecke_autoencoder                           160 lines
+  index_8m_files                               74 lines
+  ingest_all_files                             86 lines
+  kiro                                        188 lines
+  llm_strip_miner                             420 lines
+  lmfdb_inventory_consumer                    186 lines
+  lmfdb_to_prolog                             279 lines
+  map_files_to_layer1                          85 lines
+  markov_sampling                              78 lines
+  model_all_columns                           109 lines
+  multi_lang_prover                           162 lines
+  multi_level_review                          190 lines
+  multilayer_to_parquet                        50 lines
+  ontological_lens                            193 lines
+  parameterized_prover                        192 lines
+  parquet_markov_pipeline                     211 lines
+  parse_computer_algebra                       50 lines
+  partition_lmfdb                             135 lines
+  post_commit_review                          236 lines
+  pre_commit_review                           240 lines
+  precedence_survey                           466 lines
+  prime_resonance_hecke                       352 lines
+  prime_resonance_matcher                     178 lines
+  prove_ten_fold                              385 lines
+  quantum_language_object                     185 lines
+  qwen_indexer                                140 lines
+  qwen_strip_miner                             67 lines
+  qwen_to_wasm_hecke                          190 lines
+  review_paper                                287 lines
+  self_aware                                  153 lines
+  self_deploy                                 137 lines
+  self_referential_conformal                  230 lines
+  semantic_nft_restaurant                     180 lines
+  strip_mine_layers                           122 lines
+  ten_fold_areas                              207 lines
+  term_frequency                               54 lines
+  test_algorithm                               36 lines
+  trace_math_software                         208 lines
+  universal_framework                         179 lines
+  vectorize_all_parquets                      261 lines
+  virtual_knuth                               180 lines
+
+Sharding (8 tools):
+----------------------------------------
+  lmfdb_to_zkprolog_shards                    163 lines
+  markov_parquet_shards                       317 lines
+  quantum_71_shards                           142 lines
+  qwen_shard_splitter                         192 lines
+  shard_lmfdb_by_71                            87 lines
+  universal_shard_reader                      193 lines
+  zk_to_gpu_shards                            163 lines
+  zkprologml_erdf_shard                       129 lines
+
+Neural (1 tools):
+----------------------------------------
+  train_markov_bypass                          79 lines
+
+Monster (13 tools):
+----------------------------------------
+  create_monster_autoencoder                  105 lines
+  cuda_monster_pipeline                       473 lines
+  monster_autoencoder                         219 lines
+  monster_batch_sampler                       144 lines
+  monster_gpu_consumer                        229 lines
+  monster_harmonics                           206 lines
+  monster_is_meme                             235 lines
+  monster_tools_catalog                       116 lines
+  monster_tools_dashboard                     226 lines
+  monster_walk_gpu                            311 lines
+  monster_walk_primes                         235 lines
+  monster_walk_proof                          119 lines
+  train_monster                               133 lines

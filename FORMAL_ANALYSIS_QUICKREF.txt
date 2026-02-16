@@ -1,0 +1,120 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                   FORMAL ANALYSIS QUICK REFERENCE                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📊 ANALYSIS RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tools Analyzed: 111
+Parquet Tools: 25 (22.5%)
+ZK71 Tools: 9 (perfect 3.0 alignment)
+Monster Tools: 15 (2.0 alignment)
+
+TOP 5 TOOLS (by complexity score)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. prime_resonance_hecke      65.5  (13 fns, 10 structs, 7 impls)
+2. cuda_monster_pipeline       65.0  (24 fns, 6 structs, 3 impls)
+3. monster_is_meme             54.0  (10 fns, 6 structs, 4 impls)
+4. zk71_kernel_overlay         45.5  (4 fns, 2 parquet ops, 3.0 monster)
+5. zk71_integration_test       44.5  (8 fns, 1 struct, 3.0 monster)
+
+ZK71 TOOLS (perfect alignment)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+zk71_kernel_overlay          45.5  ← Parquet search
+zk71_integration_test        44.5  ← Testing framework
+zk71_unified_fs              42.5  ← Unified filesystem
+zk71_full_spectrum_sweep     42.0  ← Full spectrum search
+quantum_71_shards            38.0  ← Quantum sharding
+extract_71_objects           37.0  ← LMFDB extraction
+graded_ring_71               35.0  ← Graded ring
+shard_lmfdb_by_71            35.0  ← LMFDB sharding
+zk71_zone_quine              31.0  ← Quine pattern
+
+PARQUET LEADERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+syn_parquet_analysis          5 operations
+unified_formal_analysis       4 operations
+model_all_columns             3 operations
+zk71_kernel_overlay           2 operations
+vectorize_all_parquets        2 operations
+
+SCORING FORMULA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+score = (functions × 1.0) + (structs × 2.0) + (enums × 1.5) + 
+        (impls × 3.0) + (parquet_ops × 5.0) + (monster_align × 10.0)
+
+Monster Alignment:
+  "monster" keyword → +2.0
+  "zk" or "71"      → +1.0
+  "galois"/"hecke"  → +1.0
+  Monster prime     → +1.0
+
+QUICK COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Run analyses
+cargo run --bin syn_parquet_analysis
+cargo run --bin deep_syn_ast_analysis
+cargo run --bin unified_formal_analysis
+
+# View results
+cat unified_analysis.txt              # Canonical text
+firefox unified_analysis.html         # Interactive HTML
+cat FORMAL_ANALYSIS_SUMMARY.md        # Executive summary
+cat FORMAL_ANALYSIS_INDEX.md          # Master index
+
+# Compare
+cat analysis_comparison.txt
+
+FILES GENERATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Reports:
+  syn_parquet_analysis.txt       2.8K  Basic counts
+  ast_analysis.txt               4.9K  AST structure
+  unified_analysis.txt           4.3K  Combined (canonical)
+  unified_analysis.html          6.6K  Interactive table
+  analysis_comparison.txt        1.5K  Cross-analysis
+
+Documentation:
+  FORMAL_ANALYSIS_INDEX.md       4.4K  Master index
+  FORMAL_ANALYSIS_SUMMARY.md     4.6K  Executive summary
+
+Programs:
+  src/bin/syn_parquet_analysis.rs
+  src/bin/deep_syn_ast_analysis.rs
+  src/bin/unified_formal_analysis.rs
+
+INTEGRATION TARGETS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For Monster Search:
+  zk71_full_spectrum_sweep     ← Search all layers
+  zk71_kernel_overlay          ← In-memory + parquet
+  prime_resonance_hecke        ← Complex AST + Hecke
+
+For GPU Pipeline:
+  cuda_monster_pipeline        ← 24 functions
+  monster_walk_gpu             ← GPU + Monster
+  gpu_token_pipeline           ← 11 functions
+
+For Benchmarking:
+  Top 20 tools by complexity score
+  Use: perf record cargo run --bin <tool>
+
+NEXT STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Benchmark top 20 with perf record
+2. Factor by Monster primes (2^46 × 3^20 × ...)
+3. Integrate with monster_search_factorized.rs
+4. GPU acceleration via shmem/gpu_loader.py
+5. Create interactive dashboard
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Start: FORMAL_ANALYSIS_INDEX.md | Canonical: unified_analysis.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

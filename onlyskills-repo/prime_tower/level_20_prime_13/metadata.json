@@ -1,0 +1,15 @@
+{
+  "level": 20,
+  "prime": 13,
+  "files": [
+    {
+      "path": "./src/bin/selinux_zone_assignment.rs",
+      "functions": 5,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 233
+    }
+  ],
+  "total_complexity": 233,
+  "avg_complexity": 233
+}

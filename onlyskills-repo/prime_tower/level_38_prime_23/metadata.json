@@ -1,0 +1,15 @@
+{
+  "level": 38,
+  "prime": 23,
+  "files": [
+    {
+      "path": "./src/bin/selinux_reflection.rs",
+      "functions": 8,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 606
+    }
+  ],
+  "total_complexity": 606,
+  "avg_complexity": 606
+}

@@ -1,0 +1,55 @@
+575d72640000-575d72659000 r--p 00000000 103:06 16908317                  /usr/bin/tmux
+575d72659000-575d726f0000 r-xp 00019000 103:06 16908317                  /usr/bin/tmux
+575d726f0000-575d7271b000 r--p 000b0000 103:06 16908317                  /usr/bin/tmux
+575d7271c000-575d7272c000 r--p 000db000 103:06 16908317                  /usr/bin/tmux
+575d7272c000-575d7272e000 rw-p 000eb000 103:06 16908317                  /usr/bin/tmux
+575d7272e000-575d72735000 rw-p 00000000 00:00 0 
+575d8ba81000-575d8baa2000 rw-p 00000000 00:00 0                          [heap]
+575d8baa2000-575d8c045000 rw-p 00000000 00:00 0                          [heap]
+76932ec00000-76932eee9000 r--p 00000000 103:06 16911251                  /usr/lib/locale/locale-archive
+76932f000000-76932f028000 r--p 00000000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f028000-76932f1bd000 r-xp 00028000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f1bd000-76932f215000 r--p 001bd000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f215000-76932f216000 ---p 00215000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f216000-76932f21a000 r--p 00215000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f21a000-76932f21c000 rw-p 00219000 103:06 16921608                  /usr/lib/x86_64-linux-gnu/libc.so.6
+76932f21c000-76932f229000 rw-p 00000000 00:00 0 
+76932f37d000-76932f382000 rw-p 00000000 00:00 0 
+76932f382000-76932f385000 r--p 00000000 103:06 16921644                  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+76932f385000-76932f38f000 r-xp 00003000 103:06 16921644                  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+76932f38f000-76932f392000 r--p 0000d000 103:06 16921644                  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+76932f392000-76932f393000 r--p 0000f000 103:06 16921644                  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+76932f393000-76932f394000 rw-p 00010000 103:06 16921644                  /usr/lib/x86_64-linux-gnu/libresolv.so.2
+76932f394000-76932f396000 rw-p 00000000 00:00 0 
+76932f396000-76932f3a4000 r--p 00000000 103:06 16921620                  /usr/lib/x86_64-linux-gnu/libm.so.6
+76932f3a4000-76932f420000 r-xp 0000e000 103:06 16921620                  /usr/lib/x86_64-linux-gnu/libm.so.6
+76932f420000-76932f47b000 r--p 0008a000 103:06 16921620                  /usr/lib/x86_64-linux-gnu/libm.so.6
+76932f47b000-76932f47c000 r--p 000e4000 103:06 16921620                  /usr/lib/x86_64-linux-gnu/libm.so.6
+76932f47c000-76932f47d000 rw-p 000e5000 103:06 16921620                  /usr/lib/x86_64-linux-gnu/libm.so.6
+76932f47d000-76932f485000 r--p 00000000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f485000-76932f4a3000 r-xp 00008000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f4a3000-76932f4af000 r--p 00026000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f4af000-76932f4b0000 ---p 00032000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f4b0000-76932f4b1000 r--p 00032000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f4b1000-76932f4b2000 rw-p 00033000 103:06 16915757                  /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+76932f4b2000-76932f4c0000 r--p 00000000 103:06 16914844                  /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+76932f4c0000-76932f4d1000 r-xp 0000e000 103:06 16914844                  /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+76932f4d1000-76932f4df000 r--p 0001f000 103:06 16914844                  /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+76932f4df000-76932f4e3000 r--p 0002c000 103:06 16914844                  /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+76932f4e3000-76932f4e4000 rw-p 00030000 103:06 16914844                  /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+76932f4e4000-76932f4e5000 r--p 00000000 103:06 16909766                  /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+76932f4e5000-76932f4e6000 r-xp 00001000 103:06 16909766                  /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+76932f4e6000-76932f4e7000 r--p 00002000 103:06 16909766                  /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+76932f4e7000-76932f4e8000 r--p 00002000 103:06 16909766                  /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+76932f4e8000-76932f4e9000 rw-p 00003000 103:06 16909766                  /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+76932f506000-76932f50d000 r--s 00000000 103:06 17568377                  /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+76932f50d000-76932f50f000 rw-p 00000000 00:00 0 
+76932f50f000-76932f511000 r--p 00000000 103:06 16910015                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76932f511000-76932f53b000 r-xp 00002000 103:06 16910015                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76932f53b000-76932f546000 r--p 0002c000 103:06 16910015                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76932f547000-76932f549000 r--p 00037000 103:06 16910015                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76932f549000-76932f54b000 rw-p 00039000 103:06 16910015                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffda8cc8000-7ffda8ce9000 rw-p 00000000 00:00 0                          [stack]
+7ffda8dee000-7ffda8df2000 r--p 00000000 00:00 0                          [vvar]
+7ffda8df2000-7ffda8df4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

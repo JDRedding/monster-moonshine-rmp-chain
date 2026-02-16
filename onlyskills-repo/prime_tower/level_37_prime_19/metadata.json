@@ -1,0 +1,15 @@
+{
+  "level": 37,
+  "prime": 19,
+  "files": [
+    {
+      "path": "./src/bin/merge_prime_chunks.rs",
+      "functions": 1,
+      "structs": 2,
+      "enums": 0,
+      "complexity": 108
+    }
+  ],
+  "total_complexity": 108,
+  "avg_complexity": 108
+}

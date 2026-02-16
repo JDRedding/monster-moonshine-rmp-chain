@@ -1,0 +1,20 @@
+Tmux Execution Trace with Memory Access
+========================================
+
+Time(ms) Syscall Memory Address Size
+--------------------------------------------------------
+0.044   poll       stack    0x7ffda8ce6478   8
+0.066   ioctl      -        -                -
+0.100   readv      heap     0x575d8ba91670   34
+0.125   writev     heap     0x575d8ba91860   108
+
+Register State at poll():
+  RDI (fds): 0x575d8ba91670
+  RSI (nfds): 9
+  RDX (timeout): 14759 ms
+  RIP (pc): 0x76932f118c07
+
+Memory Regions:
+  Heap: 0x575d8ba81000-0x575d8c045000 (5.9 MB)
+  Stack: 0x7ffda8cc8000-0x7ffda8ce9000 (132 KB)
+  Text: 0x575d72659000-0x575d726f0000 (604 KB)

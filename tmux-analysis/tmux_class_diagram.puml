@@ -1,0 +1,43 @@
+@startuml
+title Tmux Class Diagram
+
+class tmux_server {
+  +pid
+  +fds
+  +clients
+  +poll_events()
+  +process_input()
+  +render_output()
+}
+
+class event_loop {
+  +timeout
+  +nfds
+  +poll_fds
+  +wait_events()
+  +dispatch_events()
+}
+
+class terminal {
+  +fd
+  +buffer
+  +cursor
+  +read_input()
+  +write_output()
+  +update_screen()
+}
+
+class client {
+  +session_id
+  +window_id
+  +pane_id
+  +attach()
+  +detach()
+  +send_keys()
+}
+
+tmux_server --> event_loop
+tmux_server --> terminal
+tmux_server --> client
+
+@enduml

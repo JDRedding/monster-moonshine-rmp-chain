@@ -1,0 +1,15 @@
+{
+  "level": 61,
+  "prime": 3,
+  "files": [
+    {
+      "path": "./src/bin/first_bit_index.rs",
+      "functions": 3,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 203
+    }
+  ],
+  "total_complexity": 203,
+  "avg_complexity": 203
+}

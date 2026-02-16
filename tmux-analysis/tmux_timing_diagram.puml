@@ -1,0 +1,69 @@
+@startuml
+title Tmux Execution Timeline (Code + Memory + Trace)
+scale 1000 as 100 pixels
+
+participant "User" as user
+participant "Kernel" as kernel
+participant "poll()" as poll
+participant "libevent" as libevent
+participant "tmux" as tmux
+participant "Heap\n0x575d8ba91670" as heap
+participant "Stack\n0x7ffda8ce6478" as stack
+
+user -> kernel : keystroke
+activate kernel
+
+kernel -> poll : fd_ready(7)
+activate poll
+note right: RDI=0x575d8ba91670\nRSI=9\nRDX=14759ms
+poll -> poll : wait 0.044ms
+poll --> kernel : return 1
+deactivate poll
+
+kernel -> libevent : dispatch_event
+activate libevent
+libevent -> tmux : process_input
+activate tmux
+
+tmux -> kernel : ioctl(8, FIONREAD)
+kernel --> tmux : 34 bytes
+
+tmux -> heap : readv(34 bytes)
+activate heap
+note right: Read from\n0x575d8ba91670
+heap --> tmux : data
+deactivate heap
+
+tmux -> stack : push registers
+activate stack
+note right: RSP=0x7ffda8ce6478
+stack --> tmux : ok
+deactivate stack
+
+tmux -> heap : writev(108 bytes)
+activate heap
+note right: Write to\n0x575d8ba91860
+heap --> tmux : ok
+deactivate heap
+
+tmux -> kernel : writev(7, 108)
+kernel --> tmux : 108
+deactivate tmux
+deactivate libevent
+
+kernel -> user : display
+deactivate kernel
+
+note over poll
+  Time: 0.044ms
+  Syscall: poll()
+  Memory: Stack
+end note
+
+note over heap
+  Read: 34 bytes
+  Write: 108 bytes
+  Total: 142 bytes
+end note
+
+@enduml

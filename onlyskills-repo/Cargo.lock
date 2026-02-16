@@ -839,9 +839,11 @@ version = "1.0.0"
 dependencies = [
  "memmap2 0.9.9",
  "polars",
+ "quote",
  "serde",
  "serde_json",
  "sha2",
+ "syn 2.0.114",
  "walkdir",
 ]
 

@@ -1,0 +1,47 @@
+Formal Analysis Comparison
+==========================
+
+Analysis 1: syn_parquet_analysis.txt
+- Total tools: 109
+- Uses syn: 2
+- Uses parquet: 25
+- Uses both: 1
+
+Analysis 2: ast_analysis.txt
+- Total tools: 110
+- Top by complexity: cuda_monster_pipeline (24 fns, 6 structs, 3 impls)
+- Parquet tools: 20
+
+Analysis 3: unified_analysis.txt
+- Total tools: 111
+- Top by score: prime_resonance_hecke (65.5)
+- ZK71 tools: 7 with perfect 3.0 alignment
+
+Cross-Analysis Insights
+-----------------------
+
+1. Tool Count Discrepancy:
+   - 109 → 110 → 111 (new tools added during analysis)
+   - Latest: unified_formal_analysis.rs (self-referential!)
+
+2. Parquet Usage:
+   - syn_parquet: 25 tools
+   - ast_analysis: 20 tools
+   - unified: 25 tools (consistent with first)
+
+3. Top Tools Across All Analyses:
+   - cuda_monster_pipeline: #1 in ast_analysis, #2 in unified
+   - prime_resonance_hecke: #2 in ast_analysis, #1 in unified
+   - zk71_kernel_overlay: High in all (parquet + Monster)
+
+4. Monster Alignment Discovery:
+   - Only unified_analysis captures Monster/ZK71 keywords
+   - 7 tools with perfect 3.0 alignment (all ZK71)
+   - 15 tools with 2.0 alignment (Monster-named)
+
+5. Scoring Evolution:
+   - syn_parquet: Simple count (syn × 10 + parquet × 5)
+   - ast_analysis: Complexity only (fns + structs + impls)
+   - unified: Weighted (fns×1 + structs×2 + impls×3 + parquet×5 + monster×10)
+
+Recommendation: Use unified_analysis.txt as canonical source

@@ -1,0 +1,15 @@
+{
+  "level": 34,
+  "prime": 11,
+  "files": [
+    {
+      "path": "./src/bin/inode_zk_arrows.rs",
+      "functions": 4,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 318
+    }
+  ],
+  "total_complexity": 318,
+  "avg_complexity": 318
+}

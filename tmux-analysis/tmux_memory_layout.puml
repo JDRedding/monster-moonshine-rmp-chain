@@ -1,0 +1,26 @@
+@startuml
+title Tmux Memory Layout
+
+package "Process Memory" {
+  [Text Segment] #lightblue
+  [Data Segment] #lightgreen
+  [Heap] #yellow
+  [Libraries] #lightgray
+  [Stack] #orange
+}
+
+[Text Segment] --> [Data Segment]
+[Data Segment] --> [Heap]
+[Heap] ..> [Libraries]
+[Libraries] ..> [Stack]
+
+note right of [Text Segment]
+  Code: 618496 KB
+end note
+
+note right of [Heap]
+  Size: 6045696 KB
+  Fragments: 2
+end note
+
+@enduml

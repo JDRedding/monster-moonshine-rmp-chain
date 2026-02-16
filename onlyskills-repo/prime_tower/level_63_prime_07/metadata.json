@@ -1,0 +1,15 @@
+{
+  "level": 63,
+  "prime": 7,
+  "files": [
+    {
+      "path": "./src/bin/onlyskills_git_finder.rs",
+      "functions": 4,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 205
+    }
+  ],
+  "total_complexity": 205,
+  "avg_complexity": 205
+}

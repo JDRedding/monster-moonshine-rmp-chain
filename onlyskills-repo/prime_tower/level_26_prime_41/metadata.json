@@ -1,0 +1,22 @@
+{
+  "level": 26,
+  "prime": 41,
+  "files": [
+    {
+      "path": "./src/bin/unified_monster_system.rs",
+      "functions": 1,
+      "structs": 6,
+      "enums": 1,
+      "complexity": 381
+    },
+    {
+      "path": "./src/bin/inode_71_shards.rs",
+      "functions": 8,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 381
+    }
+  ],
+  "total_complexity": 762,
+  "avg_complexity": 381
+}

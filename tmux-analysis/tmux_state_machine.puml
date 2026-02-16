@@ -1,0 +1,18 @@
+@startuml
+title Tmux State Machine
+
+[*] --> idle
+state idle
+state waiting_input
+state processing_input
+state rendering_output
+state updating_status
+
+idle --> processing_input : input_ready
+processing_input --> rendering_output : output_ready
+rendering_output --> updating_status : status_update
+updating_status --> idle : complete
+idle --> waiting_input : timeout
+waiting_input --> processing_input : input_ready
+
+@enduml

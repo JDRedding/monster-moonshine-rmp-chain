@@ -1,0 +1,15 @@
+{
+  "level": 64,
+  "prime": 11,
+  "files": [
+    {
+      "path": "./src/bin/topological_sort_bits.rs",
+      "functions": 4,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 206
+    }
+  ],
+  "total_complexity": 206,
+  "avg_complexity": 206
+}

@@ -1,0 +1,29 @@
+{
+  "level": 49,
+  "prime": 11,
+  "files": [
+    {
+      "path": "./src/bin/git_to_zkerdfa_monster.rs",
+      "functions": 12,
+      "structs": 2,
+      "enums": 0,
+      "complexity": 333
+    },
+    {
+      "path": "./src/bin/zkparquet_kernel_server.rs",
+      "functions": 5,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 191
+    },
+    {
+      "path": "./src/bin/extract_parquet_row.rs",
+      "functions": 1,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 49
+    }
+  ],
+  "total_complexity": 573,
+  "avg_complexity": 191
+}

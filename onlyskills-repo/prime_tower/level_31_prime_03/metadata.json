@@ -1,0 +1,22 @@
+{
+  "level": 31,
+  "prime": 3,
+  "files": [
+    {
+      "path": "./target/release/build/target-features-af17dd023d9dd9d0/out/generated.rs",
+      "functions": 0,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 599
+    },
+    {
+      "path": "./target/release/build/target-features-71779b698c0cf6b7/out/generated.rs",
+      "functions": 0,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 599
+    }
+  ],
+  "total_complexity": 1198,
+  "avg_complexity": 599
+}

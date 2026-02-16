@@ -1,0 +1,67 @@
+Deep Syn AST Analysis
+=====================
+
+Top 30 Most Complex Tools:
+----------------------------------------------------------------------------------------------------
+Name                                        Fns  Structs  Enums  Traits  Impls  Macros    Parquet
+----------------------------------------------------------------------------------------------------
+ 1. cuda_monster_pipeline                     24        6      0       0      3       0           
+ 2. prime_resonance_hecke                     13       10      1       0      7       0           
+ 3. monster_is_meme                           10        6      0       0      4       0           
+ 4. llm_strip_miner                           12        6      0       0      2       0           
+ 5. cuda_unified_pipeline                     13        4      0       0      2       0           
+ 6. prove_ten_fold                            15        3      0       0      1       0           
+ 7. division_preservation                     17        1      0       0      0       0           
+ 8. gpu_token_pipeline                        11        6      0       0      1       0           
+ 9. ten_fold_lattice                          12        0      0       0      5       0           
+10. mathematical_object_lattice               12        3      2       0      2       0           
+11. breadth_first_pipeline                    10        5      0       0      1       0           
+12. cpu_gpu_bridge                            10        5      0       0      1       0           
+13. monster_gpu_consumer                      11        3      0       0      1       0           
+14. monster_walk_gpu                          10        4      0       0      1       0           
+15. precedence_survey                         11        2      0       0      0       0           
+16. analyze_semantic_significance              9        4      0       0      0       0       ✓(1)
+17. monster_walk_proof                        11        1      0       0      1       0           
+18. lmfdb_to_prolog                           12        1      1       0      0       0       ✓(1)
+19. self_referential_conformal                 9        3      0       0      0       0           
+20. post_commit_review                         7        5      0       0      0       0           
+21. parquet_markov_pipeline                    8        3      0       0      1       0       ✓(1)
+22. monster_harmonics                          9        1      0       0      1       0           
+23. galois_ziggurat                            6        4      0       0      1       0           
+24. quantum_language_object                    4        6      0       0      1       0           
+25. review_paper                               9        2      0       0      0       0           
+26. lmfdb_inventory_consumer                   7        3      0       0      1       0           
+27. monster_walk_primes                        7        2      0       0      1       0           
+28. multi_lang_prover                          7        2      0       0      1       0           
+29. zk71_integration_test                      8        1      1       0      1       0           
+30. markov_parquet_shards                      8        2      0       0      0       0       ✓(1)
+
+Parquet Tools (ranked by usage):
+------------------------------------------------------------
+ 1. syn_parquet_analysis                     4 operations
+ 2. deep_syn_ast_analysis                    3 operations
+ 3. model_all_columns                        3 operations
+ 4. vectorize_all_parquets                   2 operations
+ 5. autolabel_filenames                      2 operations
+ 6. bulk_all_layers                          2 operations
+ 7. analyze_semantic_significance            1 operations
+ 8. lmfdb_to_prolog                          1 operations
+ 9. parquet_markov_pipeline                  1 operations
+10. markov_parquet_shards                    1 operations
+11. lmfdb_to_zkprolog_shards                 1 operations
+12. zk71_full_spectrum_sweep                 1 operations
+13. train_monster                            1 operations
+14. monster_autoencoder                      1 operations
+15. zk_to_gpu_shards                         1 operations
+16. zk71_kernel_overlay                      1 operations
+17. train_markov_bypass                      1 operations
+18. parquet_gpu_pipeline                     1 operations
+19. parquet_to_zkml                          1 operations
+20. markov_sampling                          1 operations
+21. index_8m_files                           1 operations
+22. multilayer_to_parquet                    1 operations
+23. map_files_to_layer1                      1 operations
+24. qwen_indexer                             1 operations
+25. gpu_to_parquet                           1 operations
+26. zk71_unified_fs                          0 operations
+27. qwen_strip_miner                         0 operations

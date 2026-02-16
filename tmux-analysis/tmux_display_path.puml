@@ -1,0 +1,12 @@
+@startuml
+title THIS TEXT Display Path
+
+participant "Heap\n0x575d8be97b77" as Heap
+participant "Screen Buffer" as Buffer
+participant "writev()" as Writev
+participant "Terminal" as Term
+
+Heap -> Buffer: Read "THIS TEXT"
+Buffer -> Writev: Write 34 bytes
+Writev -> Term: Display to screen
+@enduml

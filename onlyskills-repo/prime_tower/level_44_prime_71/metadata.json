@@ -1,0 +1,15 @@
+{
+  "level": 44,
+  "prime": 71,
+  "files": [
+    {
+      "path": "./src/bin/prime_tower_sorter.rs",
+      "functions": 1,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 257
+    }
+  ],
+  "total_complexity": 257,
+  "avg_complexity": 257
+}

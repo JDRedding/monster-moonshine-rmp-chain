@@ -1,0 +1,15 @@
+VmPeak:	   32704 kB
+VmSize:	   13956 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   26084 kB
+VmRSS:	    6032 kB
+RssAnon:	    2768 kB
+RssFile:	    3264 kB
+RssShmem:	       0 kB
+VmData:	    6064 kB
+VmStk:	     132 kB
+VmExe:	     604 kB
+VmLib:	    2524 kB
+VmPTE:	      72 kB
+VmSwap:	     976 kB

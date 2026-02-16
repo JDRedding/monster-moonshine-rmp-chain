@@ -1,0 +1,22 @@
+{
+  "level": 23,
+  "prime": 23,
+  "files": [
+    {
+      "path": "./src/bin/solana_meme_analyzer.rs",
+      "functions": 2,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 165
+    },
+    {
+      "path": "./src/bin/lightning_git_search.rs",
+      "functions": 1,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 307
+    }
+  ],
+  "total_complexity": 472,
+  "avg_complexity": 236
+}

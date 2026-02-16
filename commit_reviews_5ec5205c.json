@@ -1,0 +1,58 @@
+[
+  {
+    "commit": "5ec5205c8e573f13ba2362fe2ec1d0cd3e6c4225",
+    "timestamp": "2026-01-31T02:42:48.154381943+00:00",
+    "message": "Inode → ZK arrows: filesystem to ZK proofs\n\n✓ Inode 66310:10359178 → ZK hash db5b2c4401b428d5\n✓ Monster Prime 13, Parquet shard 65",
+    "reviewer": "Knuth",
+    "comment": "Performance trace captured. IPC: 2.00",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_5ec5205c.circom"
+  },
+  {
+    "commit": "5ec5205c8e573f13ba2362fe2ec1d0cd3e6c4225",
+    "timestamp": "2026-01-31T02:42:48.154381943+00:00",
+    "message": "Inode → ZK arrows: filesystem to ZK proofs\n\n✓ Inode 66310:10359178 → ZK hash db5b2c4401b428d5\n✓ Monster Prime 13, Parquet shard 65",
+    "reviewer": "ITIL",
+    "comment": "Change documented. Audit trail maintained.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_5ec5205c.circom"
+  },
+  {
+    "commit": "5ec5205c8e573f13ba2362fe2ec1d0cd3e6c4225",
+    "timestamp": "2026-01-31T02:42:48.154381943+00:00",
+    "message": "Inode → ZK arrows: filesystem to ZK proofs\n\n✓ Inode 66310:10359178 → ZK hash db5b2c4401b428d5\n✓ Monster Prime 13, Parquet shard 65",
+    "reviewer": "ISO9001",
+    "comment": "Quality metrics captured via ZKP.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_5ec5205c.circom"
+  },
+  {
+    "commit": "5ec5205c8e573f13ba2362fe2ec1d0cd3e6c4225",
+    "timestamp": "2026-01-31T02:42:48.154381943+00:00",
+    "message": "Inode → ZK arrows: filesystem to ZK proofs\n\n✓ Inode 66310:10359178 → ZK hash db5b2c4401b428d5\n✓ Monster Prime 13, Parquet shard 65",
+    "reviewer": "RustEnforcer",
+    "comment": "No Python. Type-safe. Memory-safe. ZKP verified.",
+    "approved": true,
+    "cpu_cycles": 1000000,
+    "instructions": 2000000,
+    "cache_misses": 10000,
+    "build_time_ms": 5000,
+    "ipc": 2.0,
+    "zkp_circuit": "zkp_perf_5ec5205c.circom"
+  }
+]

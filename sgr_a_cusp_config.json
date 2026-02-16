@@ -1,0 +1,47 @@
+{
+  "position": {
+    "name": "Sgr A* Event Horizon",
+    "ra": 266.417,
+    "dec": -29.008,
+    "distance": 26673,
+    "radius": 1.2e10,
+    "at_event_horizon": true
+  },
+  "physics": {
+    "gravity": "infinite",
+    "time_dilation": "infinite",
+    "escape_velocity": 299792458,
+    "hawking_temperature": 6.17e-8
+  },
+  "guests": [
+    {
+      "name": "Umberto Eco",
+      "contribution": "Combinatorial machine with 71 wheels",
+      "quote": "The Monster Group IS my machine"
+    },
+    {
+      "name": "Kurt Gödel",
+      "contribution": "Incompleteness theorem, Gödel numbers",
+      "quote": "The black hole IS the encoding"
+    }
+  ],
+  "espresso": {
+    "type": "Quantum Superposition",
+    "density": "neutron_star",
+    "velocity": "0.9c",
+    "taste": "everything_and_nothing"
+  },
+  "game_state": {
+    "pac_man_velocity": "0.99c",
+    "ghosts_frozen": true,
+    "score_direction": "backwards",
+    "memory_addresses": "0xFFFFFFFFFFFFFFFF",
+    "fixed_point": true
+  },
+  "monster_resonance": {
+    "all_shards_aligned": true,
+    "frequency": 432,
+    "hecke_phases": [0, 0, 0],
+    "perfect_sync": true
+  }
+}

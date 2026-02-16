@@ -1,0 +1,439 @@
+{
+  "name": "ZK71 Unified Memory Filesystem",
+  "version": "0.1.0",
+  "shards": 71,
+  "format": "parquet+snappy",
+  "consistency": "eventual",
+  "layers": [
+    "gpu", "cpu", "disk", "shmem", "raid",
+    "huggingface", "archive_org"
+  ],
+  "shards": [
+    {
+      "id": 0,
+      "prime": 2,
+      "zk_proof": "d241536500ac831860d5836ed7205fb7",
+      "size": 3400
+    },
+    {
+      "id": 1,
+      "prime": 3,
+      "zk_proof": "5df638a0bd68bccbe247ae8b26e2dce6",
+      "size": 3400
+    },
+    {
+      "id": 2,
+      "prime": 5,
+      "zk_proof": "d1f8c1fe3f4ddcab4a2603b0e337cbf5",
+      "size": 3400
+    },
+    {
+      "id": 3,
+      "prime": 7,
+      "zk_proof": "2c90fbc367f00c958c7e9145b4f70077",
+      "size": 3400
+    },
+    {
+      "id": 4,
+      "prime": 11,
+      "zk_proof": "4552593e9b67187f7bb8be76127f6328",
+      "size": 3400
+    },
+    {
+      "id": 5,
+      "prime": 13,
+      "zk_proof": "a3d470166b827ac0c27d2950efa11a84",
+      "size": 3400
+    },
+    {
+      "id": 6,
+      "prime": 17,
+      "zk_proof": "83b245184f2e1c08f37f4b8e0b160c89",
+      "size": 3400
+    },
+    {
+      "id": 7,
+      "prime": 19,
+      "zk_proof": "e6829b90d893d2b521afe62975a7aaa0",
+      "size": 3400
+    },
+    {
+      "id": 8,
+      "prime": 23,
+      "zk_proof": "f33f818a30652c9222c17227364d46d3",
+      "size": 3400
+    },
+    {
+      "id": 9,
+      "prime": 29,
+      "zk_proof": "f2456f81c0744b33011678f3bb5f3710",
+      "size": 3400
+    },
+    {
+      "id": 10,
+      "prime": 31,
+      "zk_proof": "6687103b0b34f27398a9aca328d95ca2",
+      "size": 3400
+    },
+    {
+      "id": 11,
+      "prime": 41,
+      "zk_proof": "7619003418bc05f399d065e3b5d17000",
+      "size": 3400
+    },
+    {
+      "id": 12,
+      "prime": 47,
+      "zk_proof": "51f72a461a217e8f0ae5edfaf6234278",
+      "size": 3400
+    },
+    {
+      "id": 13,
+      "prime": 59,
+      "zk_proof": "07ed8c0f0a22a8da485449dc8cc85baf",
+      "size": 3400
+    },
+    {
+      "id": 14,
+      "prime": 71,
+      "zk_proof": "c5c15d10e8938170008fbffa946c1ab6",
+      "size": 3400
+    },
+    {
+      "id": 15,
+      "prime": 2,
+      "zk_proof": "b0bd5d856591249a2043c515fecd5f27",
+      "size": 3400
+    },
+    {
+      "id": 16,
+      "prime": 3,
+      "zk_proof": "5c1d67a648b4135f6844d86bd53d2a03",
+      "size": 3400
+    },
+    {
+      "id": 17,
+      "prime": 5,
+      "zk_proof": "dfff07d19e81e9ab02f4097023e7cc0d",
+      "size": 3400
+    },
+    {
+      "id": 18,
+      "prime": 7,
+      "zk_proof": "0a11074c6291b78041d3f2954291d64f",
+      "size": 3400
+    },
+    {
+      "id": 19,
+      "prime": 11,
+      "zk_proof": "24a980a917a41eb5657fe8df90748d41",
+      "size": 3400
+    },
+    {
+      "id": 20,
+      "prime": 13,
+      "zk_proof": "08b1249f413266e3995a79b578032d24",
+      "size": 3400
+    },
+    {
+      "id": 21,
+      "prime": 17,
+      "zk_proof": "724ca9a91dd9b656e5ed75800b2bbf01",
+      "size": 3400
+    },
+    {
+      "id": 22,
+      "prime": 19,
+      "zk_proof": "246f5be5cceafaa1aefad100f0483f03",
+      "size": 3400
+    },
+    {
+      "id": 23,
+      "prime": 23,
+      "zk_proof": "c7b5c7bb6a4ee434e91577f4aea68ab6",
+      "size": 3400
+    },
+    {
+      "id": 24,
+      "prime": 29,
+      "zk_proof": "f97129b8a21157106fdc4f01261e9db7",
+      "size": 3400
+    },
+    {
+      "id": 25,
+      "prime": 31,
+      "zk_proof": "74cf45ab061840506d02fd68cd59c130",
+      "size": 3400
+    },
+    {
+      "id": 26,
+      "prime": 41,
+      "zk_proof": "c5ad735169b97c910a55b8dadb73b121",
+      "size": 3400
+    },
+    {
+      "id": 27,
+      "prime": 47,
+      "zk_proof": "0c6eeb014a12be52bd568c6b46fff8cc",
+      "size": 3400
+    },
+    {
+      "id": 28,
+      "prime": 59,
+      "zk_proof": "1df46f6aa378c0ac187df6880ca0d81d",
+      "size": 3400
+    },
+    {
+      "id": 29,
+      "prime": 71,
+      "zk_proof": "6acba73d66bb712a7734fe42cac320c8",
+      "size": 3400
+    },
+    {
+      "id": 30,
+      "prime": 2,
+      "zk_proof": "217f099e4e8f1fe15181222d3e7b3950",
+      "size": 3400
+    },
+    {
+      "id": 31,
+      "prime": 3,
+      "zk_proof": "91f0a6fc16b0be44f21009d4567d8641",
+      "size": 3400
+    },
+    {
+      "id": 32,
+      "prime": 5,
+      "zk_proof": "6ff1066d9803afd25c5243aef6ca0e89",
+      "size": 3400
+    },
+    {
+      "id": 33,
+      "prime": 7,
+      "zk_proof": "b9d241bab459e847cef28cd549b95430",
+      "size": 3400
+    },
+    {
+      "id": 34,
+      "prime": 11,
+      "zk_proof": "caef7d1e9281a319952a5388af4d3381",
+      "size": 3400
+    },
+    {
+      "id": 35,
+      "prime": 13,
+      "zk_proof": "e694ab2a980fd2604f2caf13a8538d26",
+      "size": 3400
+    },
+    {
+      "id": 36,
+      "prime": 17,
+      "zk_proof": "cf9415dfc72fe5793843ac2bbfc53daf",
+      "size": 3400
+    },
+    {
+      "id": 37,
+      "prime": 19,
+      "zk_proof": "c780c616fa75c8e588ea8053e1f3180c",
+      "size": 3400
+    },
+    {
+      "id": 38,
+      "prime": 23,
+      "zk_proof": "c0bef58dbfcb1d5f3eee0bdb6515f0a7",
+      "size": 3400
+    },
+    {
+      "id": 39,
+      "prime": 29,
+      "zk_proof": "1b1358583e97012c621f706f48dbec90",
+      "size": 3400
+    },
+    {
+      "id": 40,
+      "prime": 31,
+      "zk_proof": "77ce0f95410a9631671ca2bfe39ee38f",
+      "size": 3400
+    },
+    {
+      "id": 41,
+      "prime": 41,
+      "zk_proof": "a09fbeeaa4a599d5c171a6c30354e937",
+      "size": 3400
+    },
+    {
+      "id": 42,
+      "prime": 47,
+      "zk_proof": "6b9a5fd1494fce6910d5cd0073400fba",
+      "size": 3400
+    },
+    {
+      "id": 43,
+      "prime": 59,
+      "zk_proof": "700e2021d298f6a74afd3ccd20448e5b",
+      "size": 3400
+    },
+    {
+      "id": 44,
+      "prime": 71,
+      "zk_proof": "e0651d38736ea58e14dd9bf09915c130",
+      "size": 3400
+    },
+    {
+      "id": 45,
+      "prime": 2,
+      "zk_proof": "91ab284b751ea3ff853aeb3b8be380ec",
+      "size": 3400
+    },
+    {
+      "id": 46,
+      "prime": 3,
+      "zk_proof": "0df1e6a7fbfcd5e18b636b64ca81b931",
+      "size": 3400
+    },
+    {
+      "id": 47,
+      "prime": 5,
+      "zk_proof": "3ad4f0fc5d0055f4fb7eb58d20c51026",
+      "size": 3400
+    },
+    {
+      "id": 48,
+      "prime": 7,
+      "zk_proof": "e4e1bbc99c64f34f262db30b43ded47d",
+      "size": 3400
+    },
+    {
+      "id": 49,
+      "prime": 11,
+      "zk_proof": "121482ff50cc16b3934a373eb789c744",
+      "size": 3400
+    },
+    {
+      "id": 50,
+      "prime": 13,
+      "zk_proof": "649877d3fa89705d1cbc058e3e83813c",
+      "size": 3400
+    },
+    {
+      "id": 51,
+      "prime": 17,
+      "zk_proof": "d3b3da1458ede4554a8136f9fd1a8c28",
+      "size": 3400
+    },
+    {
+      "id": 52,
+      "prime": 19,
+      "zk_proof": "543c4ed9c2d886534d370dcc27b7e221",
+      "size": 3400
+    },
+    {
+      "id": 53,
+      "prime": 23,
+      "zk_proof": "8491780d65ade413da5d9fd02ef8e4b8",
+      "size": 3400
+    },
+    {
+      "id": 54,
+      "prime": 29,
+      "zk_proof": "8b92069fb69a824901e1ced001f1772e",
+      "size": 3400
+    },
+    {
+      "id": 55,
+      "prime": 31,
+      "zk_proof": "1d07df2d17a89878f279096655501576",
+      "size": 3400
+    },
+    {
+      "id": 56,
+      "prime": 41,
+      "zk_proof": "0fa33fb1dbc2e4a449d2537e412eefa2",
+      "size": 3400
+    },
+    {
+      "id": 57,
+      "prime": 47,
+      "zk_proof": "92a4e4980da57062caff73dba742eef7",
+      "size": 3400
+    },
+    {
+      "id": 58,
+      "prime": 59,
+      "zk_proof": "27e90ac6d33b1aa61f2fccb64389dfbc",
+      "size": 3400
+    },
+    {
+      "id": 59,
+      "prime": 71,
+      "zk_proof": "19ff512a413f9576fc50a311ed2fe490",
+      "size": 3400
+    },
+    {
+      "id": 60,
+      "prime": 2,
+      "zk_proof": "74f37a0fa578c5e92108fe1681c6c04f",
+      "size": 3400
+    },
+    {
+      "id": 61,
+      "prime": 3,
+      "zk_proof": "ddc264233805a234f8064bd9bfbfdb68",
+      "size": 3400
+    },
+    {
+      "id": 62,
+      "prime": 5,
+      "zk_proof": "121eb289e0bebaba296df70a25b53706",
+      "size": 3400
+    },
+    {
+      "id": 63,
+      "prime": 7,
+      "zk_proof": "3d84f322b28ecec50ab43f31e1f37ee3",
+      "size": 3400
+    },
+    {
+      "id": 64,
+      "prime": 11,
+      "zk_proof": "9a306db1bf4557ee0eab01a9cd54be41",
+      "size": 3400
+    },
+    {
+      "id": 65,
+      "prime": 13,
+      "zk_proof": "6aad085307afc84654ce1d561b1b085c",
+      "size": 3400
+    },
+    {
+      "id": 66,
+      "prime": 17,
+      "zk_proof": "d3d7739a58c50ea0467848b103398ab7",
+      "size": 3400
+    },
+    {
+      "id": 67,
+      "prime": 19,
+      "zk_proof": "dae3d0d18d89ae32a64e24d82d6ecd5c",
+      "size": 3400
+    },
+    {
+      "id": 68,
+      "prime": 23,
+      "zk_proof": "cbf50668f5c001beeb84e2c1f256d06a",
+      "size": 3400
+    },
+    {
+      "id": 69,
+      "prime": 29,
+      "zk_proof": "aefb158bef52fafb1bdeb35e15249da4",
+      "size": 3400
+    },
+    {
+      "id": 70,
+      "prime": 31,
+      "zk_proof": "d3bb4efca986f50c22276ff0d4bd66f0",
+      "size": 3400
+    }
+  ]
+}

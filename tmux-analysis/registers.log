@@ -1,0 +1,43 @@
+rax            0xfffffffffffffdfc  -516
+rbx            0x575d8ba91860      96059286689888
+rcx            0x76932f118c07      130374521949191
+rdx            0x39a7              14759
+rsi            0x9                 9
+rdi            0x575d8ba91670      96059286689392
+rbp            0x9                 0x9
+rsp            0x7ffda8ce6478      0x7ffda8ce6478
+r8             0x7ffda8ce64f0      140727435551984
+r9             0x0                 0
+r10            0x0                 0
+r11            0x246               582
+r12            0x575d8ba90c10      96059286686736
+r13            0x575d8ba91670      96059286689392
+r14            0x39a7              14759
+r15            0x9                 9
+rip            0x76932f118c07      0x76932f118c07 <__GI___poll+23>
+eflags         0x246               [ PF ZF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+#0  0x000076932f118c07 in __GI___poll (fds=0x575d8ba91670, nfds=9, timeout=14759) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x000076932f4a1309 in ?? () from /lib/x86_64-linux-gnu/libevent_core-2.1.so.7
+#2  0x000076932f49c921 in event_base_loop () from /lib/x86_64-linux-gnu/libevent_core-2.1.so.7
+#3  0x0000575d7265c19f in ?? ()
+#4  0x000076932f029d90 in __libc_start_call_main (main=main@entry=0x575d7265aa80, argc=argc@entry=1, argv=argv@entry=0x7ffda8ce6978) at ../sysdeps/nptl/libc_start_call_main.h:58
+#5  0x000076932f029e40 in __libc_start_main_impl (main=0x575d7265aa80, argc=1, argv=0x7ffda8ce6978, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffda8ce6968) at ../csu/libc-start.c:392
+#6  0x0000575d7265ca05 in ?? ()
+  Id   Target Id                                          Frame 
+* 1    Thread 0x76932f37d740 (LWP 2179432) "tmux: server" 0x000076932f118c07 in __GI___poll (fds=0x575d8ba91670, nfds=9, timeout=14759) at ../sysdeps/unix/sysv/linux/poll.c:29
+
+Thread 1 (Thread 0x76932f37d740 (LWP 2179432) "tmux: server"):
+#0  0x000076932f118c07 in __GI___poll (fds=0x575d8ba91670, nfds=9, timeout=14759) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x000076932f4a1309 in ?? () from /lib/x86_64-linux-gnu/libevent_core-2.1.so.7
+#2  0x000076932f49c921 in event_base_loop () from /lib/x86_64-linux-gnu/libevent_core-2.1.so.7
+#3  0x0000575d7265c19f in ?? ()
+#4  0x000076932f029d90 in __libc_start_call_main (main=main@entry=0x575d7265aa80, argc=argc@entry=1, argv=argv@entry=0x7ffda8ce6978) at ../sysdeps/nptl/libc_start_call_main.h:58
+#5  0x000076932f029e40 in __libc_start_main_impl (main=0x575d7265aa80, argc=1, argv=0x7ffda8ce6978, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffda8ce6968) at ../csu/libc-start.c:392
+#6  0x0000575d7265ca05 in ?? ()
+[Inferior 1 (process 2179432) detached]

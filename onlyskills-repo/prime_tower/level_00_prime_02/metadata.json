@@ -1,0 +1,15 @@
+{
+  "level": 0,
+  "prime": 2,
+  "files": [
+    {
+      "path": "./src/gpu_monster.rs",
+      "functions": 8,
+      "structs": 3,
+      "enums": 0,
+      "complexity": 355
+    }
+  ],
+  "total_complexity": 355,
+  "avg_complexity": 355
+}

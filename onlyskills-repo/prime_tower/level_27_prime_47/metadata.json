@@ -1,0 +1,15 @@
+{
+  "level": 27,
+  "prime": 47,
+  "files": [
+    {
+      "path": "./solfunmeme_airdrop.rs",
+      "functions": 0,
+      "structs": 3,
+      "enums": 1,
+      "complexity": 98
+    }
+  ],
+  "total_complexity": 98,
+  "avg_complexity": 98
+}

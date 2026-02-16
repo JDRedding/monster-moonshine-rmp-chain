@@ -1,0 +1,94 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x000076932f118c07 in __GI___poll (fds=0x575d8ba91670, nfds=9, timeout=274) at ../sysdeps/unix/sysv/linux/poll.c:29
+29	../sysdeps/unix/sysv/linux/poll.c: No such file or directory.
+process 2179432
+Mapped address spaces:
+
+          Start Addr           End Addr       Size     Offset  Perms  objfile
+      0x575d72640000     0x575d72659000    0x19000        0x0  r--p   /usr/bin/tmux
+      0x575d72659000     0x575d726f0000    0x97000    0x19000  r-xp   /usr/bin/tmux
+      0x575d726f0000     0x575d7271b000    0x2b000    0xb0000  r--p   /usr/bin/tmux
+      0x575d7271c000     0x575d7272c000    0x10000    0xdb000  r--p   /usr/bin/tmux
+      0x575d7272c000     0x575d7272e000     0x2000    0xeb000  rw-p   /usr/bin/tmux
+      0x575d7272e000     0x575d72735000     0x7000        0x0  rw-p   
+      0x575d8ba81000     0x575d8baa2000    0x21000        0x0  rw-p   [heap]
+      0x575d8baa2000     0x575d8c045000   0x5a3000        0x0  rw-p   [heap]
+      0x76932ec00000     0x76932eee9000   0x2e9000        0x0  r--p   /usr/lib/locale/locale-archive
+      0x76932f000000     0x76932f028000    0x28000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f028000     0x76932f1bd000   0x195000    0x28000  r-xp   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f1bd000     0x76932f215000    0x58000   0x1bd000  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f215000     0x76932f216000     0x1000   0x215000  ---p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f216000     0x76932f21a000     0x4000   0x215000  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f21a000     0x76932f21c000     0x2000   0x219000  rw-p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x76932f21c000     0x76932f229000     0xd000        0x0  rw-p   
+      0x76932f37d000     0x76932f382000     0x5000        0x0  rw-p   
+      0x76932f382000     0x76932f385000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libresolv.so.2
+      0x76932f385000     0x76932f38f000     0xa000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libresolv.so.2
+      0x76932f38f000     0x76932f392000     0x3000     0xd000  r--p   /usr/lib/x86_64-linux-gnu/libresolv.so.2
+      0x76932f392000     0x76932f393000     0x1000     0xf000  r--p   /usr/lib/x86_64-linux-gnu/libresolv.so.2
+      0x76932f393000     0x76932f394000     0x1000    0x10000  rw-p   /usr/lib/x86_64-linux-gnu/libresolv.so.2
+      0x76932f394000     0x76932f396000     0x2000        0x0  rw-p   
+      0x76932f396000     0x76932f3a4000     0xe000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libm.so.6
+      0x76932f3a4000     0x76932f420000    0x7c000     0xe000  r-xp   /usr/lib/x86_64-linux-gnu/libm.so.6
+      0x76932f420000     0x76932f47b000    0x5b000    0x8a000  r--p   /usr/lib/x86_64-linux-gnu/libm.so.6
+      0x76932f47b000     0x76932f47c000     0x1000    0xe4000  r--p   /usr/lib/x86_64-linux-gnu/libm.so.6
+      0x76932f47c000     0x76932f47d000     0x1000    0xe5000  rw-p   /usr/lib/x86_64-linux-gnu/libm.so.6
+      0x76932f47d000     0x76932f485000     0x8000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f485000     0x76932f4a3000    0x1e000     0x8000  r-xp   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f4a3000     0x76932f4af000     0xc000    0x26000  r--p   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f4af000     0x76932f4b0000     0x1000    0x32000  ---p   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f4b0000     0x76932f4b1000     0x1000    0x32000  r--p   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f4b1000     0x76932f4b2000     0x1000    0x33000  rw-p   /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1
+      0x76932f4b2000     0x76932f4c0000     0xe000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+      0x76932f4c0000     0x76932f4d1000    0x11000     0xe000  r-xp   /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+      0x76932f4d1000     0x76932f4df000     0xe000    0x1f000  r--p   /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+      0x76932f4df000     0x76932f4e3000     0x4000    0x2c000  r--p   /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+      0x76932f4e3000     0x76932f4e4000     0x1000    0x30000  rw-p   /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+      0x76932f4e4000     0x76932f4e5000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+      0x76932f4e5000     0x76932f4e6000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+      0x76932f4e6000     0x76932f4e7000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+      0x76932f4e7000     0x76932f4e8000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+      0x76932f4e8000     0x76932f4e9000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libutempter.so.1.2.1
+      0x76932f506000     0x76932f50d000     0x7000        0x0  r--s   /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+      0x76932f50d000     0x76932f50f000     0x2000        0x0  rw-p   
+      0x76932f50f000     0x76932f511000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x76932f511000     0x76932f53b000    0x2a000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x76932f53b000     0x76932f546000     0xb000    0x2c000  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x76932f547000     0x76932f549000     0x2000    0x37000  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x76932f549000     0x76932f54b000     0x2000    0x39000  rw-p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffda8cc8000     0x7ffda8ce9000    0x21000        0x0  rw-p   [stack]
+      0x7ffda8dee000     0x7ffda8df2000     0x4000        0x0  r--p   [vvar]
+      0x7ffda8df2000     0x7ffda8df4000     0x2000        0x0  r-xp   [vdso]
+  0xffffffffff600000 0xffffffffff601000     0x1000        0x0  --xp   [vsyscall]
+Undefined info command: "heap".  Try "help info".
+Exec file: `/usr/bin/tmux', file type elf64-x86-64.
+ [0]      0x575d72640318->0x575d72640334 at 0x00000318: .interp ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [1]      0x575d72640338->0x575d72640368 at 0x00000338: .note.gnu.property ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [2]      0x575d72640368->0x575d7264038c at 0x00000368: .note.gnu.build-id ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [3]      0x575d7264038c->0x575d726403ac at 0x0000038c: .note.ABI-tag ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [4]      0x575d726403b0->0x575d726403d4 at 0x000003b0: .gnu.hash ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [5]      0x575d726403d8->0x575d72641830 at 0x000003d8: .dynsym ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [6]      0x575d72641830->0x575d726421cb at 0x00001830: .dynstr ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [7]      0x575d726421cc->0x575d7264237e at 0x000021cc: .gnu.version ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [8]      0x575d72642380->0x575d726424e0 at 0x00002380: .gnu.version_r ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [9]      0x575d726424e0->0x575d72657648 at 0x000024e0: .rela.dyn ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [10]     0x575d72657648->0x575d72658950 at 0x00017648: .rela.plt ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [11]     0x575d72659000->0x575d7265901b at 0x00019000: .init ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [12]     0x575d72659020->0x575d72659ce0 at 0x00019020: .plt ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [13]     0x575d72659ce0->0x575d72659cf0 at 0x00019ce0: .plt.got ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [14]     0x575d72659cf0->0x575d7265a9a0 at 0x00019cf0: .plt.sec ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [15]     0x575d7265a9a0->0x575d726efb19 at 0x0001a9a0: .text ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [16]     0x575d726efb1c->0x575d726efb29 at 0x000afb1c: .fini ALLOC LOAD READONLY CODE HAS_CONTENTS
+ [17]     0x575d726f0000->0x575d72707faf at 0x000b0000: .rodata ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [18]     0x575d72707fb0->0x575d7270a434 at 0x000c7fb0: .eh_frame_hdr ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [19]     0x575d7270a438->0x575d7271ab5c at 0x000ca438: .eh_frame ALLOC LOAD READONLY DATA HAS_CONTENTS
+ [20]     0x575d7271c210->0x575d7271c218 at 0x000db210: .init_array ALLOC LOAD DATA HAS_CONTENTS
+ [21]     0x575d7271c218->0x575d7271c220 at 0x000db218: .fini_array ALLOC LOAD DATA HAS_CONTENTS
+ [22]     0x575d7271c220->0x575d7272b6f8 at 0x000db220: .data.rel.ro ALLOC LOAD DATA HAS_CONTENTS
+ [23]     0x575d7272b6f8->0x575d7272b938 at 0x000ea6f8: .dynamic ALLOC LOAD DATA HAS_CONTENTS
+ [24]     0x575d7272b938->0x575d7272c000 at 0x000ea938: .got ALLOC LOAD DATA HAS_CONTENTS
+ [25]     0x575d7272c000->0x575d7272d960 at 0x000eb000: .data ALLOC LOAD DATA HAS_CONTENTS
+ [26]     0x575d7272d960->0x575d72734c38 at 0x000ec960: .bss ALLOC
+ [27]     0x00000000->0x00000034 at 0x000ec960: .gnu_debuglink READONLY HAS_CONTENTS
+[Inferior 1 (process 2179432) detached]

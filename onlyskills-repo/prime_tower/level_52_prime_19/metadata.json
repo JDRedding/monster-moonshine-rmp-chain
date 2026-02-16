@@ -1,0 +1,15 @@
+{
+  "level": 52,
+  "prime": 19,
+  "files": [
+    {
+      "path": "./src/bin/gap_to_parquet.rs",
+      "functions": 1,
+      "structs": 2,
+      "enums": 0,
+      "complexity": 123
+    }
+  ],
+  "total_complexity": 123,
+  "avg_complexity": 123
+}

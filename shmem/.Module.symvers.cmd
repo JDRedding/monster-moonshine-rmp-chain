@@ -1,0 +1,1 @@
+savedcmd_/home/mdupont/experiments/monster/shmem/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/mdupont/experiments/monster/shmem/Module.symvers -n -T /home/mdupont/experiments/monster/shmem/modules.order -i Module.symvers -e 

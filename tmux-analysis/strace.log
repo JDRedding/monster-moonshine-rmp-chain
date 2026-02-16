@@ -1,0 +1,891 @@
+2179432 23:25:14.774569 restart_syscall(<... resuming interrupted read ...>) = 1 <0.000044>
+2179432 23:25:14.774763 ioctl(8, FIONREAD, [34]) = 0 <0.000011>
+2179432 23:25:14.774845 readv(8, [{iov_base="strace: Process 2179432 attached"..., iov_len=34}], 1) = 34 <0.000012>
+2179432 23:25:14.774936 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000013>
+2179432 23:25:14.775006 writev(10, [{iov_base="\33[1;19r\33[1;19r\33[1;167s\33[19;167H\n"..., iov_len=108}], 1) = 108 <0.000015>
+2179432 23:25:14.775059 writev(7, [{iov_base="\33[1;19r\33[19;167H\n\33[18;1Hstrace: "..., iov_len=75}], 1) = 75 <0.000014>
+2179432 23:25:14.775112 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009070>
+2179432 23:25:14.784233 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 96) = 1 ([{fd=8, revents=POLLIN}]) <0.018096>
+2179432 23:25:14.802380 ioctl(8, FIONREAD, [123]) = 0 <0.000008>
+2179432 23:25:14.802411 readv(8, [{iov_base="Lowering default frequency rate "..., iov_len=123}], 1) = 123 <0.000008>
+2179432 23:25:14.802464 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000009>
+2179432 23:25:14.802500 writev(7, [{iov_base="\33[1;19r\33[1;1H\33[2S\33[17dLowering d"..., iov_len=165}], 1) = 165 <0.000010>
+2179432 23:25:14.802548 writev(10, [{iov_base="\33[1;19r\33[1;19r\33[1;167s\33[1;1H\33[2S"..., iov_len=202}], 1) = 202 <0.000015>
+2179432 23:25:14.802595 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010071>
+2179432 23:25:14.812719 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 68) = 0 (Timeout) <0.068150>
+2179432 23:25:14.880916 ioctl(8, TIOCGPGRP, [1695221]) = 0 <0.000008>
+2179432 23:25:14.880956 openat(AT_FDCWD, "/proc/1695221/cmdline", O_RDONLY) = 13 <0.000008>
+2179432 23:25:14.880986 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000005>
+2179432 23:25:14.881200 read(13, "kiro-cli\0", 1024) = 9 <0.000006>
+2179432 23:25:14.881219 close(13)       = 0 <0.000003>
+2179432 23:25:14.881233 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 3855) = 0 (Timeout) <3.859189>
+2179432 23:25:18.741400 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 15000) = 1 ([{fd=7, revents=POLLIN}]) <2.491489>
+2179432 23:25:21.233325 ioctl(7, FIONREAD, [1]) = 0 <0.000233>
+2179432 23:25:21.233891 readv(7, [{iov_base="\24", iov_len=1}], 1) = 1 <0.000249>
+2179432 23:25:21.234873 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 12507) = 1 ([{fd=7, revents=POLLIN}]) <0.263521>
+2179432 23:25:21.498730 ioctl(7, FIONREAD, [1]) = 0 <0.000053>
+2179432 23:25:21.498917 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000127>
+2179432 23:25:21.501402 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000228>
+2179432 23:25:21.501940 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000182>
+2179432 23:25:21.502266 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000043>
+2179432 23:25:21.502390 read(13, "kiro-cli\0", 1024) = 9 <0.000071>
+2179432 23:25:21.502528 close(13)       = 0 <0.000038>
+2179432 23:25:21.502656 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 12239) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000058>
+2179432 23:25:21.502804 writev(7, [{iov_base="\r\n\33[32m\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342"..., iov_len=976}, {iov_base="\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342\224\200\342"..., iov_len=73}], 2) = 1049 <0.000058>
+2179432 23:25:21.502986 writev(10, [{iov_base="\33[1;168H\342\224\202\302\267\302\267\302\267\302\267\302\267\33[2;168H\342\224\202"..., iov_len=976}, {iov_base="\302\267\302\267\302\267\302\267\33[23;168H\342\224\202\302\267\302\267\302\267\302\267\302\267\33["..., iov_len=2000}, {iov_base="\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267\302\267"..., iov_len=129}], 3) = 3105 <0.000069>
+2179432 23:25:21.503163 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 12238) = 1 ([{fd=7, revents=POLLIN}]) <3.905979>
+2179432 23:25:25.409362 ioctl(7, FIONREAD, [1]) = 0 <0.000204>
+2179432 23:25:25.409894 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000278>
+2179432 23:25:25.410492 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 8331) = 1 ([{fd=11, revents=POLLOUT}]) <0.000066>
+2179432 23:25:25.410714 writev(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000163>
+2179432 23:25:25.411307 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 8330) = 1 ([{fd=11, revents=POLLIN}]) <0.000217>
+2179432 23:25:25.411886 ioctl(11, FIONREAD, [1]) = 0 <0.000190>
+2179432 23:25:25.412392 readv(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000135>
+2179432 23:25:25.412814 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000048>
+2179432 23:25:25.413014 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000076>
+2179432 23:25:25.413260 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000045>
+2179432 23:25:25.413413 read(13, "kiro-cli\0", 1024) = 9 <0.000060>
+2179432 23:25:25.413563 close(13)       = 0 <0.000049>
+2179432 23:25:25.413716 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000062>
+2179432 23:25:25.413917 writev(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000148>
+2179432 23:25:25.414333 writev(10, [{iov_base="o", iov_len=1}], 1) = 1 <0.000053>
+2179432 23:25:25.414534 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7) = 0 (Timeout) <0.007194>
+2179432 23:25:25.421949 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8320) = 1 ([{fd=7, revents=POLLIN}]) <0.045212>
+2179432 23:25:25.467600 ioctl(7, FIONREAD, [1]) = 0 <0.000207>
+2179432 23:25:25.468156 readv(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000224>
+2179432 23:25:25.468707 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 8273) = 1 ([{fd=11, revents=POLLOUT}]) <0.000174>
+2179432 23:25:25.469036 writev(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000085>
+2179432 23:25:25.469248 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8272) = 1 ([{fd=11, revents=POLLIN}]) <0.000175>
+2179432 23:25:25.469536 ioctl(11, FIONREAD, [1]) = 0 <0.000045>
+2179432 23:25:25.469670 readv(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:25.469842 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000088>
+2179432 23:25:25.470065 writev(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:25.470213 writev(10, [{iov_base="k", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:25.470360 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009145>
+2179432 23:25:25.479635 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 433) = 1 ([{fd=7, revents=POLLIN}]) <0.084954>
+2179432 23:25:25.564972 ioctl(7, FIONREAD, [1]) = 0 <0.000224>
+2179432 23:25:25.565685 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000214>
+2179432 23:25:25.566300 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 346) = 1 ([{fd=11, revents=POLLOUT}]) <0.000167>
+2179432 23:25:25.566635 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000061>
+2179432 23:25:25.566956 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 346) = 1 ([{fd=11, revents=POLLIN}]) <0.000081>
+2179432 23:25:25.567321 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:25.567459 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:25.567638 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:25.567803 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000052>
+2179432 23:25:25.568051 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000129>
+2179432 23:25:25.568430 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009224>
+2179432 23:25:25.577830 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 335) = 1 ([{fd=7, revents=POLLIN}]) <0.252249>
+2179432 23:25:25.830465 ioctl(7, FIONREAD, [1]) = 0 <0.000222>
+2179432 23:25:25.831041 readv(7, [{iov_base="n", iov_len=1}], 1) = 1 <0.000206>
+2179432 23:25:25.831571 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 81) = 1 ([{fd=11, revents=POLLOUT}]) <0.000138>
+2179432 23:25:25.831895 writev(11, [{iov_base="n", iov_len=1}], 1) = 1 <0.000059>
+2179432 23:25:25.832141 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 80) = 1 ([{fd=11, revents=POLLIN}]) <0.000149>
+2179432 23:25:25.832524 ioctl(11, FIONREAD, [1]) = 0 <0.000117>
+2179432 23:25:25.832816 readv(11, [{iov_base="n", iov_len=1}], 1) = 1 <0.000150>
+2179432 23:25:25.833210 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000123>
+2179432 23:25:25.833482 writev(7, [{iov_base="n", iov_len=1}], 1) = 1 <0.000056>
+2179432 23:25:25.833656 writev(10, [{iov_base="n", iov_len=1}], 1) = 1 <0.000054>
+2179432 23:25:25.833849 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009144>
+2179432 23:25:25.843123 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 69) = 1 ([{fd=7, revents=POLLIN}]) <0.062700>
+2179432 23:25:25.906516 ioctl(7, FIONREAD, [1]) = 0 <0.000212>
+2179432 23:25:25.907100 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000209>
+2179432 23:25:25.907642 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5) = 1 ([{fd=11, revents=POLLOUT}]) <0.000147>
+2179432 23:25:25.908145 writev(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000061>
+2179432 23:25:25.908357 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4) = 1 ([{fd=11, revents=POLLIN}]) <0.000181>
+2179432 23:25:25.908686 ioctl(11, FIONREAD, [1]) = 0 <0.000046>
+2179432 23:25:25.908842 readv(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:25.909042 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 3) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:25.909216 writev(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:25.909369 writev(10, [{iov_base="o", iov_len=1}], 1) = 1 <0.000133>
+2179432 23:25:25.909712 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 3) = 0 (Timeout) <0.003135>
+2179432 23:25:25.913050 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000074>
+2179432 23:25:25.913270 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000081>
+2179432 23:25:25.913468 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000046>
+2179432 23:25:25.913618 read(13, "kiro-cli\0", 1024) = 9 <0.000060>
+2179432 23:25:25.913778 close(13)       = 0 <0.000048>
+2179432 23:25:25.913941 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5) = 0 (Timeout) <0.005128>
+2179432 23:25:25.919202 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7822) = 1 ([{fd=7, revents=POLLIN}]) <0.088426>
+2179432 23:25:26.007990 ioctl(7, FIONREAD, [1]) = 0 <0.000123>
+2179432 23:25:26.008507 readv(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000239>
+2179432 23:25:26.009156 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 7732) = 1 ([{fd=11, revents=POLLOUT}]) <0.000194>
+2179432 23:25:26.009550 writev(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:26.009736 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7732) = 1 ([{fd=11, revents=POLLIN}]) <0.000235>
+2179432 23:25:26.010095 ioctl(11, FIONREAD, [1]) = 0 <0.000045>
+2179432 23:25:26.010233 readv(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000045>
+2179432 23:25:26.010407 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000068>
+2179432 23:25:26.010588 writev(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:26.010733 writev(10, [{iov_base="w", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:26.010881 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010148>
+2179432 23:25:26.021183 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 392) = 1 ([{fd=7, revents=POLLIN}]) <0.184455>
+2179432 23:25:26.206182 ioctl(7, FIONREAD, [1]) = 0 <0.000266>
+2179432 23:25:26.206863 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000201>
+2179432 23:25:26.207486 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 206) = 1 ([{fd=11, revents=POLLOUT}]) <0.000154>
+2179432 23:25:26.207813 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000124>
+2179432 23:25:26.208085 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 205) = 1 ([{fd=11, revents=POLLIN}]) <0.000112>
+2179432 23:25:26.208314 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:26.208453 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:26.208627 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000076>
+2179432 23:25:26.208843 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000072>
+2179432 23:25:26.209043 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000142>
+2179432 23:25:26.209532 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009226>
+2179432 23:25:26.219060 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 194) = 0 (Timeout) <0.194471>
+2179432 23:25:26.414182 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000285>
+2179432 23:25:26.414919 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000226>
+2179432 23:25:26.415499 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000144>
+2179432 23:25:26.415821 read(13, "kiro-cli\0", 1024) = 9 <0.000080>
+2179432 23:25:26.416033 close(13)       = 0 <0.000048>
+2179432 23:25:26.416211 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7325) = 1 ([{fd=7, revents=POLLIN}]) <0.122349>
+2179432 23:25:26.538971 ioctl(7, FIONREAD, [1]) = 0 <0.000243>
+2179432 23:25:26.539718 readv(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000135>
+2179432 23:25:26.540241 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 7201) = 1 ([{fd=11, revents=POLLOUT}]) <0.000132>
+2179432 23:25:26.540583 writev(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000134>
+2179432 23:25:26.540970 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7201) = 1 ([{fd=11, revents=POLLIN}]) <0.000130>
+2179432 23:25:26.541303 ioctl(11, FIONREAD, [1]) = 0 <0.000123>
+2179432 23:25:26.541581 readv(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000116>
+2179432 23:25:26.541875 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000106>
+2179432 23:25:26.542187 writev(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:26.542400 writev(10, [{iov_base="w", iov_len=1}], 1) = 1 <0.000093>
+2179432 23:25:26.542626 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 1 ([{fd=7, revents=POLLIN}]) <0.003094>
+2179432 23:25:26.545891 ioctl(7, FIONREAD, [1]) = 0 <0.000050>
+2179432 23:25:26.546074 readv(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:26.546274 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5) = 1 ([{fd=11, revents=POLLOUT}]) <0.000066>
+2179432 23:25:26.546452 writev(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000181>
+2179432 23:25:26.546858 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5) = 1 ([{fd=11, revents=POLLIN}]) <0.000127>
+2179432 23:25:26.547245 ioctl(11, FIONREAD, [1]) = 0 <0.000122>
+2179432 23:25:26.547517 readv(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000125>
+2179432 23:25:26.547888 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000137>
+2179432 23:25:26.548239 writev(10, [{iov_base="e", iov_len=1}], 1) = 1 <0.000051>
+2179432 23:25:26.548411 writev(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:26.548568 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 3) = 0 (Timeout) <0.003131>
+2179432 23:25:26.551830 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 363) = 1 ([{fd=7, revents=POLLIN}]) <0.112341>
+2179432 23:25:26.664550 ioctl(7, FIONREAD, [1]) = 0 <0.000182>
+2179432 23:25:26.665157 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000279>
+2179432 23:25:26.665914 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 249) = 1 ([{fd=11, revents=POLLOUT}]) <0.000228>
+2179432 23:25:26.666396 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000128>
+2179432 23:25:26.666787 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 248) = 1 ([{fd=11, revents=POLLIN}]) <0.000168>
+2179432 23:25:26.667167 ioctl(11, FIONREAD, [1]) = 0 <0.000049>
+2179432 23:25:26.667332 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:26.667520 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:26.667692 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:26.667840 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000074>
+2179432 23:25:26.668093 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009155>
+2179432 23:25:26.677506 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 237) = 1 ([{fd=7, revents=POLLIN}]) <0.154904>
+2179432 23:25:26.832780 ioctl(7, FIONREAD, [1]) = 0 <0.000213>
+2179432 23:25:26.833342 readv(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000065>
+2179432 23:25:26.833621 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 81) = 1 ([{fd=11, revents=POLLOUT}]) <0.000072>
+2179432 23:25:26.833819 writev(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000053>
+2179432 23:25:26.834027 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 80) = 1 ([{fd=11, revents=POLLIN}]) <0.000085>
+2179432 23:25:26.834229 ioctl(11, FIONREAD, [1]) = 0 <0.000043>
+2179432 23:25:26.834395 readv(11, [{iov_base="w", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:26.834565 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000052>
+2179432 23:25:26.834729 writev(7, [{iov_base="w", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:26.834872 writev(10, [{iov_base="w", iov_len=1}], 1) = 1 <0.000067>
+2179432 23:25:26.835051 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009162>
+2179432 23:25:26.844345 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 70) = 1 ([{fd=7, revents=POLLIN}]) <0.036246>
+2179432 23:25:26.880983 ioctl(7, FIONREAD, [1]) = 0 <0.000279>
+2179432 23:25:26.881774 readv(7, [{iov_base="i", iov_len=1}], 1) = 1 <0.000134>
+2179432 23:25:26.882319 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 32) = 1 ([{fd=11, revents=POLLOUT}]) <0.000146>
+2179432 23:25:26.882767 writev(11, [{iov_base="i", iov_len=1}], 1) = 1 <0.000131>
+2179432 23:25:26.883089 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 31) = 1 ([{fd=11, revents=POLLIN}]) <0.000059>
+2179432 23:25:26.883294 ioctl(11, FIONREAD, [1]) = 0 <0.000045>
+2179432 23:25:26.883432 readv(11, [{iov_base="i", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:26.883604 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000054>
+2179432 23:25:26.883787 writev(7, [{iov_base="i", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:26.883945 writev(10, [{iov_base="i", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:26.884103 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009141>
+2179432 23:25:26.893371 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 21) = 0 (Timeout) <0.021455>
+2179432 23:25:26.915263 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000211>
+2179432 23:25:26.915848 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000224>
+2179432 23:25:26.916388 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000119>
+2179432 23:25:26.916665 read(13, "kiro-cli\0", 1024) = 9 <0.000066>
+2179432 23:25:26.916849 close(13)       = 0 <0.000063>
+2179432 23:25:26.917040 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6824) = 1 ([{fd=7, revents=POLLIN}]) <0.226876>
+2179432 23:25:27.144319 ioctl(7, FIONREAD, [1]) = 0 <0.000192>
+2179432 23:25:27.144836 readv(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000223>
+2179432 23:25:27.145388 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 6596) = 1 ([{fd=11, revents=POLLOUT}]) <0.000141>
+2179432 23:25:27.145744 writev(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:27.145950 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6596) = 1 ([{fd=11, revents=POLLIN}]) <0.000099>
+2179432 23:25:27.146259 ioctl(11, FIONREAD, [1]) = 0 <0.000045>
+2179432 23:25:27.146398 readv(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:27.146573 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:27.146737 writev(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000067>
+2179432 23:25:27.146900 writev(10, [{iov_base="l", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:27.147139 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009141>
+2179432 23:25:27.156414 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 259) = 1 ([{fd=7, revents=POLLIN}]) <0.145306>
+2179432 23:25:27.302102 ioctl(7, FIONREAD, [1]) = 0 <0.000222>
+2179432 23:25:27.302675 readv(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000295>
+2179432 23:25:27.303471 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 112) = 1 ([{fd=11, revents=POLLOUT}]) <0.000153>
+2179432 23:25:27.303801 writev(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:27.304026 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 111) = 1 ([{fd=11, revents=POLLIN}]) <0.000063>
+2179432 23:25:27.304217 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:27.304352 readv(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:27.304543 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000052>
+2179432 23:25:27.304705 writev(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:27.304848 writev(10, [{iov_base="l", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:27.305054 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009142>
+2179432 23:25:27.314324 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 101) = 1 ([{fd=7, revents=POLLIN}]) <0.094719>
+2179432 23:25:27.409606 ioctl(7, FIONREAD, [1]) = 0 <0.000210>
+2179432 23:25:27.410200 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000193>
+2179432 23:25:27.410775 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5) = 1 ([{fd=11, revents=POLLOUT}]) <0.000233>
+2179432 23:25:27.411226 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000057>
+2179432 23:25:27.411419 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4) = 1 ([{fd=11, revents=POLLIN}]) <0.000066>
+2179432 23:25:27.411603 ioctl(11, FIONREAD, [1]) = 0 <0.000043>
+2179432 23:25:27.411758 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:27.411948 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000056>
+2179432 23:25:27.412209 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000051>
+2179432 23:25:27.412362 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:27.412514 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 3) = 0 (Timeout) <0.003133>
+2179432 23:25:27.415826 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000049>
+2179432 23:25:27.416007 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000081>
+2179432 23:25:27.416195 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000046>
+2179432 23:25:27.416348 read(13, "kiro-cli\0", 1024) = 9 <0.000061>
+2179432 23:25:27.416503 close(13)       = 0 <0.000046>
+2179432 23:25:27.416669 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5) = 0 (Timeout) <0.005135>
+2179432 23:25:27.421915 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 1) = 0 (Timeout) <0.001128>
+2179432 23:25:27.423182 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6318) = 1 ([{fd=7, revents=POLLIN}]) <0.173939>
+2179432 23:25:27.597533 ioctl(7, FIONREAD, [1]) = 0 <0.000214>
+2179432 23:25:27.598070 readv(7, [{iov_base="m", iov_len=1}], 1) = 1 <0.000198>
+2179432 23:25:27.598669 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 6143) = 1 ([{fd=11, revents=POLLOUT}]) <0.000241>
+2179432 23:25:27.599127 writev(11, [{iov_base="m", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:27.599328 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6142) = 1 ([{fd=11, revents=POLLIN}]) <0.000121>
+2179432 23:25:27.599567 ioctl(11, FIONREAD, [1]) = 0 <0.000043>
+2179432 23:25:27.599703 readv(11, [{iov_base="m", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:27.599915 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000057>
+2179432 23:25:27.600127 writev(7, [{iov_base="m", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:27.600274 writev(10, [{iov_base="m", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:27.600452 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009144>
+2179432 23:25:27.609727 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 306) = 1 ([{fd=7, revents=POLLIN}]) <0.085139>
+2179432 23:25:27.695433 ioctl(7, FIONREAD, [1]) = 0 <0.000213>
+2179432 23:25:27.696000 readv(7, [{iov_base="a", iov_len=1}], 1) = 1 <0.000193>
+2179432 23:25:27.696450 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 219) = 1 ([{fd=11, revents=POLLOUT}]) <0.000120>
+2179432 23:25:27.696717 writev(11, [{iov_base="a", iov_len=1}], 1) = 1 <0.000054>
+2179432 23:25:27.696881 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 219) = 1 ([{fd=11, revents=POLLIN}]) <0.000186>
+2179432 23:25:27.697209 ioctl(11, FIONREAD, [1]) = 0 <0.000043>
+2179432 23:25:27.697342 readv(11, [{iov_base="a", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:27.697508 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000051>
+2179432 23:25:27.697685 writev(7, [{iov_base="a", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:27.697830 writev(10, [{iov_base="a", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:27.698003 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009145>
+2179432 23:25:27.707272 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 208) = 1 ([{fd=7, revents=POLLIN}]) <0.114449>
+2179432 23:25:27.822092 ioctl(7, FIONREAD, [1]) = 0 <0.000200>
+2179432 23:25:27.822616 readv(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000141>
+2179432 23:25:27.823175 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 92) = 1 ([{fd=11, revents=POLLOUT}]) <0.000089>
+2179432 23:25:27.823522 writev(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000053>
+2179432 23:25:27.823705 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 92) = 1 ([{fd=11, revents=POLLIN}]) <0.000204>
+2179432 23:25:27.824042 ioctl(11, FIONREAD, [1]) = 0 <0.000043>
+2179432 23:25:27.824180 readv(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:27.824366 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000052>
+2179432 23:25:27.824529 writev(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:27.824673 writev(10, [{iov_base="k", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:27.824820 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010141>
+2179432 23:25:27.835120 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 80) = 0 (Timeout) <0.080510>
+2179432 23:25:27.916095 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000283>
+2179432 23:25:27.916858 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000228>
+2179432 23:25:27.917443 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000144>
+2179432 23:25:27.917742 read(13, "kiro-cli\0", 1024) = 9 <0.000091>
+2179432 23:25:27.917952 close(13)       = 0 <0.000050>
+2179432 23:25:27.918139 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5823) = 1 ([{fd=7, revents=POLLIN}]) <0.020159>
+2179432 23:25:27.938599 ioctl(7, FIONREAD, [1]) = 0 <0.000200>
+2179432 23:25:27.939083 readv(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000137>
+2179432 23:25:27.939505 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5802) = 1 ([{fd=11, revents=POLLOUT}]) <0.000102>
+2179432 23:25:27.939767 writev(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000052>
+2179432 23:25:27.939950 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5802) = 1 ([{fd=11, revents=POLLIN}]) <0.000281>
+2179432 23:25:27.940355 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:27.940484 readv(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000064>
+2179432 23:25:27.940669 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:27.940833 writev(10, [{iov_base="e", iov_len=1}], 1) = 1 <0.000059>
+2179432 23:25:27.940996 writev(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:27.941165 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009137>
+2179432 23:25:27.950427 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 466) = 1 ([{fd=7, revents=POLLIN}]) <0.135760>
+2179432 23:25:28.086560 ioctl(7, FIONREAD, [1]) = 0 <0.000213>
+2179432 23:25:28.087099 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000218>
+2179432 23:25:28.087584 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 329) = 1 ([{fd=11, revents=POLLOUT}]) <0.000072>
+2179432 23:25:28.087797 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000074>
+2179432 23:25:28.088120 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 328) = 1 ([{fd=11, revents=POLLIN}]) <0.000131>
+2179432 23:25:28.088440 ioctl(11, FIONREAD, [1]) = 0 <0.000128>
+2179432 23:25:28.088782 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000143>
+2179432 23:25:28.089275 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000056>
+2179432 23:25:28.089455 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:28.089602 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:28.089758 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009177>
+2179432 23:25:28.099066 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 317) = 1 ([{fd=7, revents=POLLIN}]) <0.062321>
+2179432 23:25:28.161769 ioctl(7, FIONREAD, [1]) = 0 <0.000228>
+2179432 23:25:28.162345 readv(7, [{iov_base="a", iov_len=1}], 1) = 1 <0.000208>
+2179432 23:25:28.162814 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 254) = 1 ([{fd=11, revents=POLLOUT}]) <0.000169>
+2179432 23:25:28.163164 writev(11, [{iov_base="a", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:28.163350 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 253) = 1 ([{fd=11, revents=POLLIN}]) <0.000185>
+2179432 23:25:28.163666 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:28.163800 readv(11, [{iov_base="a", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:28.163988 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:28.164161 writev(7, [{iov_base="a", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:28.164308 writev(10, [{iov_base="a", iov_len=1}], 1) = 1 <0.000054>
+2179432 23:25:28.164483 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009140>
+2179432 23:25:28.173747 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 243) = 1 ([{fd=7, revents=POLLIN}]) <0.118917>
+2179432 23:25:28.293335 ioctl(7, FIONREAD, [1]) = 0 <0.000224>
+2179432 23:25:28.294060 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000236>
+2179432 23:25:28.294717 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 122) = 1 ([{fd=11, revents=POLLOUT}]) <0.000335>
+2179432 23:25:28.295376 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000059>
+2179432 23:25:28.295549 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 121) = 1 ([{fd=11, revents=POLLIN}]) <0.000205>
+2179432 23:25:28.295831 ioctl(11, FIONREAD, [1]) = 0 <0.000033>
+2179432 23:25:28.295934 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000036>
+2179432 23:25:28.296081 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000059>
+2179432 23:25:28.296211 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:28.296301 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:28.296392 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009112>
+2179432 23:25:28.305573 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 111) = 0 (Timeout) <0.111504>
+2179432 23:25:28.417502 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000219>
+2179432 23:25:28.418092 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000260>
+2179432 23:25:28.418561 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000049>
+2179432 23:25:28.418737 read(13, "kiro-cli\0", 1024) = 9 <0.000049>
+2179432 23:25:28.418872 close(13)       = 0 <0.000035>
+2179432 23:25:28.419032 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5322) = 1 ([{fd=7, revents=POLLIN}]) <2.350660>
+2179432 23:25:30.770047 ioctl(7, FIONREAD, [1]) = 0 <0.000221>
+2179432 23:25:30.770569 readv(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000140>
+2179432 23:25:30.771054 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 2970) = 1 ([{fd=11, revents=POLLOUT}]) <0.000156>
+2179432 23:25:30.771337 writev(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:30.771465 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 2970) = 1 ([{fd=11, revents=POLLIN}]) <0.000177>
+2179432 23:25:30.771713 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:30.771799 readv(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:30.771992 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000032>
+2179432 23:25:30.772084 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000052>
+2179432 23:25:30.772194 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000035>
+2179432 23:25:30.772294 read(13, "kiro-cli\0", 1024) = 9 <0.000043>
+2179432 23:25:30.772394 close(13)       = 0 <0.000034>
+2179432 23:25:30.772488 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:30.772590 writev(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000051>
+2179432 23:25:30.772694 writev(10, [{iov_base="p", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:30.772804 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009131>
+2179432 23:25:30.782025 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 2959) = 1 ([{fd=7, revents=POLLIN}]) <0.366101>
+2179432 23:25:31.148480 ioctl(7, FIONREAD, [1]) = 0 <0.000227>
+2179432 23:25:31.149019 readv(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000147>
+2179432 23:25:31.149436 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 2592) = 1 ([{fd=11, revents=POLLOUT}]) <0.000093>
+2179432 23:25:31.149628 writev(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000052>
+2179432 23:25:31.149768 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 2592) = 1 ([{fd=11, revents=POLLIN}]) <0.000047>
+2179432 23:25:31.149911 ioctl(11, FIONREAD, [1]) = 0 <0.000042>
+2179432 23:25:31.150228 readv(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:31.150364 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000055>
+2179432 23:25:31.150506 writev(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:31.150601 writev(10, [{iov_base="r", iov_len=1}], 1) = 1 <0.000127>
+2179432 23:25:31.150852 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009197>
+2179432 23:25:31.160219 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 112) = 0 (Timeout) <0.112393>
+2179432 23:25:31.273104 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000227>
+2179432 23:25:31.273680 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000294>
+2179432 23:25:31.274333 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000065>
+2179432 23:25:31.274571 read(13, "kiro-cli\0", 1024) = 9 <0.000159>
+2179432 23:25:31.274867 close(13)       = 0 <0.000064>
+2179432 23:25:31.275090 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 2466) = 1 ([{fd=7, revents=POLLIN}]) <0.010865>
+2179432 23:25:31.286185 ioctl(7, FIONREAD, [1]) = 0 <0.000066>
+2179432 23:25:31.286429 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:31.286618 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 2455) = 1 ([{fd=11, revents=POLLOUT}]) <0.000054>
+2179432 23:25:31.286758 writev(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000039>
+2179432 23:25:31.286861 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 2455) = 1 ([{fd=11, revents=POLLIN}]) <0.000224>
+2179432 23:25:31.287156 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:31.287238 readv(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000031>
+2179432 23:25:31.287343 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000034>
+2179432 23:25:31.287477 writev(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:31.287564 writev(10, [{iov_base="o", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:31.287675 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010112>
+2179432 23:25:31.297856 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 475) = 0 (Timeout) <0.475848>
+2179432 23:25:31.774307 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000249>
+2179432 23:25:31.774968 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000240>
+2179432 23:25:31.775562 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000138>
+2179432 23:25:31.775979 read(13, "kiro-cli\0", 1024) = 9 <0.000196>
+2179432 23:25:31.776272 close(13)       = 0 <0.000037>
+2179432 23:25:31.776392 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 1965) = 1 ([{fd=7, revents=POLLIN}]) <1.554201>
+2179432 23:25:33.330999 ioctl(7, FIONREAD, [1]) = 0 <0.000169>
+2179432 23:25:33.331484 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000301>
+2179432 23:25:33.332158 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 409) = 1 ([{fd=11, revents=POLLOUT}]) <0.000081>
+2179432 23:25:33.332419 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000052>
+2179432 23:25:33.332570 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 409) = 1 ([{fd=11, revents=POLLIN}]) <0.000268>
+2179432 23:25:33.332945 ioctl(11, FIONREAD, [67]) = 0 <0.000034>
+2179432 23:25:33.333056 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=67}], 1) = 67 <0.000038>
+2179432 23:25:33.333295 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000037>
+2179432 23:25:33.333400 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000062>
+2179432 23:25:33.333542 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000039>
+2179432 23:25:33.333667 read(13, "kiro-cli\0", 1024) = 9 <0.000050>
+2179432 23:25:33.333787 close(13)       = 0 <0.000039>
+2179432 23:25:33.333903 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000041>
+2179432 23:25:33.334052 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=58}], 1) = 58 <0.000040>
+2179432 23:25:33.334172 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=68}], 1) = 68 <0.000056>
+2179432 23:25:33.334311 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008105>
+2179432 23:25:33.342507 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 399) = 1 ([{fd=7, revents=POLLIN}]) <0.143627>
+2179432 23:25:33.486451 ioctl(7, FIONREAD, [1]) = 0 <0.000061>
+2179432 23:25:33.486630 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000053>
+2179432 23:25:33.486919 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 255) = 1 ([{fd=11, revents=POLLOUT}]) <0.000063>
+2179432 23:25:33.487114 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:33.487243 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 254) = 1 ([{fd=11, revents=POLLIN}]) <0.000276>
+2179432 23:25:33.487608 ioctl(11, FIONREAD, [66]) = 0 <0.000033>
+2179432 23:25:33.487710 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=66}], 1) = 66 <0.000036>
+2179432 23:25:33.487905 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000041>
+2179432 23:25:33.488055 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=67}], 1) = 67 <0.000040>
+2179432 23:25:33.488170 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=57}], 1) = 57 <0.000038>
+2179432 23:25:33.488285 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009182>
+2179432 23:25:33.497604 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 244) = 1 ([{fd=7, revents=POLLIN}]) <0.173103>
+2179432 23:25:33.671067 ioctl(7, FIONREAD, [1]) = 0 <0.000137>
+2179432 23:25:33.671350 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000179>
+2179432 23:25:33.671814 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 70) = 1 ([{fd=11, revents=POLLOUT}]) <0.000195>
+2179432 23:25:33.672180 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000072>
+2179432 23:25:33.672534 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 69) = 1 ([{fd=11, revents=POLLIN}]) <0.000195>
+2179432 23:25:33.672946 ioctl(11, FIONREAD, [65]) = 0 <0.000054>
+2179432 23:25:33.673143 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=65}], 1) = 65 <0.000036>
+2179432 23:25:33.673343 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000037>
+2179432 23:25:33.673456 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=56}], 1) = 56 <0.000038>
+2179432 23:25:33.673552 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=66}], 1) = 66 <0.000052>
+2179432 23:25:33.673663 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009112>
+2179432 23:25:33.682845 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 58) = 0 (Timeout) <0.058418>
+2179432 23:25:33.742464 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 91) = 0 (Timeout) <0.091510>
+2179432 23:25:33.834443 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000233>
+2179432 23:25:33.835059 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000247>
+2179432 23:25:33.835674 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000217>
+2179432 23:25:33.836106 read(13, "kiro-cli\0", 1024) = 9 <0.000053>
+2179432 23:25:33.836247 close(13)       = 0 <0.000036>
+2179432 23:25:33.836366 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 14906) = 1 ([{fd=7, revents=POLLIN}]) <0.387238>
+2179432 23:25:34.224124 ioctl(7, FIONREAD, [1]) = 0 <0.000231>
+2179432 23:25:34.224734 readv(7, [{iov_base="h", iov_len=1}], 1) = 1 <0.000268>
+2179432 23:25:34.225424 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 14517) = 1 ([{fd=11, revents=POLLOUT}]) <0.000242>
+2179432 23:25:34.225981 writev(11, [{iov_base="h", iov_len=1}], 1) = 1 <0.000061>
+2179432 23:25:34.226168 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 14516) = 1 ([{fd=11, revents=POLLIN}]) <0.000284>
+2179432 23:25:34.226528 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:34.226613 readv(11, [{iov_base="h", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:34.226728 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:34.226828 writev(7, [{iov_base="h", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:34.226917 writev(10, [{iov_base="h", iov_len=1}], 1) = 1 <0.000036>
+2179432 23:25:34.227026 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009110>
+2179432 23:25:34.236206 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 98) = 0 (Timeout) <0.098439>
+2179432 23:25:34.335109 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000225>
+2179432 23:25:34.335706 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000284>
+2179432 23:25:34.336346 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000224>
+2179432 23:25:34.336784 read(13, "kiro-cli\0", 1024) = 9 <0.000052>
+2179432 23:25:34.336945 close(13)       = 0 <0.000039>
+2179432 23:25:34.337077 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 14405) = 1 ([{fd=7, revents=POLLIN}]) <0.032057>
+2179432 23:25:34.369505 ioctl(7, FIONREAD, [1]) = 0 <0.000232>
+2179432 23:25:34.370095 readv(7, [{iov_base="i", iov_len=1}], 1) = 1 <0.000228>
+2179432 23:25:34.370731 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 14372) = 1 ([{fd=11, revents=POLLOUT}]) <0.000275>
+2179432 23:25:34.371256 writev(11, [{iov_base="i", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:34.371414 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 14371) = 1 ([{fd=11, revents=POLLIN}]) <0.000268>
+2179432 23:25:34.371759 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:34.371843 readv(11, [{iov_base="i", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:34.371973 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:34.372078 writev(7, [{iov_base="i", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:34.372167 writev(10, [{iov_base="i", iov_len=1}], 1) = 1 <0.000051>
+2179432 23:25:34.372275 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009112>
+2179432 23:25:34.381457 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 454) = 1 ([{fd=7, revents=POLLIN}]) <0.107188>
+2179432 23:25:34.489012 ioctl(7, FIONREAD, [1]) = 0 <0.000239>
+2179432 23:25:34.489617 readv(7, [{iov_base="s", iov_len=1}], 1) = 1 <0.000227>
+2179432 23:25:34.490308 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 345) = 1 ([{fd=11, revents=POLLOUT}]) <0.000259>
+2179432 23:25:34.490770 writev(11, [{iov_base="s", iov_len=1}], 1) = 1 <0.000049>
+2179432 23:25:34.490969 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 344) = 1 ([{fd=11, revents=POLLIN}]) <0.000229>
+2179432 23:25:34.491283 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:34.491367 readv(11, [{iov_base="s", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:34.491489 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000035>
+2179432 23:25:34.491589 writev(7, [{iov_base="s", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:34.491679 writev(10, [{iov_base="s", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:34.491769 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010109>
+2179432 23:25:34.501963 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 333) = 1 ([{fd=7, revents=POLLIN}]) <0.101307>
+2179432 23:25:34.603632 ioctl(7, FIONREAD, [1]) = 0 <0.000274>
+2179432 23:25:34.604266 readv(7, [{iov_base="t", iov_len=1}], 1) = 1 <0.000256>
+2179432 23:25:34.604949 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 231) = 1 ([{fd=11, revents=POLLOUT}]) <0.000246>
+2179432 23:25:34.605427 writev(11, [{iov_base="t", iov_len=1}], 1) = 1 <0.000070>
+2179432 23:25:34.605610 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 230) = 1 ([{fd=11, revents=POLLIN}]) <0.000247>
+2179432 23:25:34.605970 ioctl(11, FIONREAD, [1]) = 0 <0.000034>
+2179432 23:25:34.606067 readv(11, [{iov_base="t", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:34.606189 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:34.606294 writev(7, [{iov_base="t", iov_len=1}], 1) = 1 <0.000037>
+2179432 23:25:34.606392 writev(10, [{iov_base="t", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:34.606483 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009112>
+2179432 23:25:34.615663 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 220) = 0 (Timeout) <0.220609>
+2179432 23:25:34.836665 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000250>
+2179432 23:25:34.837391 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000234>
+2179432 23:25:34.837971 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000207>
+2179432 23:25:34.838502 read(13, "kiro-cli\0", 1024) = 9 <0.000209>
+2179432 23:25:34.838990 close(13)       = 0 <0.000066>
+2179432 23:25:34.839217 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 13903) = 1 ([{fd=7, revents=POLLIN}]) <0.369612>
+2179432 23:25:35.209499 ioctl(7, FIONREAD, [1]) = 0 <0.000205>
+2179432 23:25:35.210060 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000206>
+2179432 23:25:35.210709 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 13532) = 1 ([{fd=11, revents=POLLOUT}]) <0.000217>
+2179432 23:25:35.211112 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000126>
+2179432 23:25:35.211486 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 13531) = 1 ([{fd=11, revents=POLLIN}]) <0.000120>
+2179432 23:25:35.211797 ioctl(11, FIONREAD, [68]) = 0 <0.000121>
+2179432 23:25:35.212097 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=68}], 1) = 68 <0.000117>
+2179432 23:25:35.212473 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000056>
+2179432 23:25:35.212670 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=69}], 1) = 69 <0.000053>
+2179432 23:25:35.212844 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=59}], 1) = 59 <0.000079>
+2179432 23:25:35.213049 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008140>
+2179432 23:25:35.221358 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 1) = 0 (Timeout) <0.001127>
+2179432 23:25:35.222609 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 115) = 0 (Timeout) <0.115486>
+2179432 23:25:35.338547 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000202>
+2179432 23:25:35.339084 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000243>
+2179432 23:25:35.339628 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000198>
+2179432 23:25:35.340322 read(13, "kiro-cli\0", 1024) = 9 <0.000126>
+2179432 23:25:35.340623 close(13)       = 0 <0.000117>
+2179432 23:25:35.340966 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 13402) = 1 ([{fd=7, revents=POLLIN}]) <0.021510>
+2179432 23:25:35.362869 ioctl(7, FIONREAD, [1]) = 0 <0.000175>
+2179432 23:25:35.363298 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000157>
+2179432 23:25:35.363704 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 13379) = 1 ([{fd=11, revents=POLLOUT}]) <0.000168>
+2179432 23:25:35.364044 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000057>
+2179432 23:25:35.364223 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 13378) = 1 ([{fd=11, revents=POLLIN}]) <0.000190>
+2179432 23:25:35.364520 ioctl(11, FIONREAD, [67]) = 0 <0.000045>
+2179432 23:25:35.364658 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=67}], 1) = 67 <0.000047>
+2179432 23:25:35.364918 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000057>
+2179432 23:25:35.365106 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=68}], 1) = 68 <0.000052>
+2179432 23:25:35.365249 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=58}], 1) = 58 <0.000046>
+2179432 23:25:35.365432 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009194>
+2179432 23:25:35.374838 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 463) = 1 ([{fd=7, revents=POLLIN}]) <0.103399>
+2179432 23:25:35.478640 ioctl(7, FIONREAD, [1]) = 0 <0.000244>
+2179432 23:25:35.479210 readv(7, [{iov_base="g", iov_len=1}], 1) = 1 <0.000227>
+2179432 23:25:35.479810 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 359) = 1 ([{fd=11, revents=POLLOUT}]) <0.000159>
+2179432 23:25:35.480164 writev(11, [{iov_base="g", iov_len=1}], 1) = 1 <0.000125>
+2179432 23:25:35.480557 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 358) = 1 ([{fd=11, revents=POLLIN}]) <0.000128>
+2179432 23:25:35.480883 ioctl(11, FIONREAD, [1]) = 0 <0.000121>
+2179432 23:25:35.481192 readv(11, [{iov_base="g", iov_len=1}], 1) = 1 <0.000105>
+2179432 23:25:35.481478 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000057>
+2179432 23:25:35.481673 writev(10, [{iov_base="g", iov_len=1}], 1) = 1 <0.000070>
+2179432 23:25:35.481844 writev(7, [{iov_base="g", iov_len=1}], 1) = 1 <0.000067>
+2179432 23:25:35.482184 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008145>
+2179432 23:25:35.490475 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 348) = 1 ([{fd=7, revents=POLLIN}]) <0.160348>
+2179432 23:25:35.651430 ioctl(7, FIONREAD, [1]) = 0 <0.000215>
+2179432 23:25:35.651991 readv(7, [{iov_base="h", iov_len=1}], 1) = 1 <0.000195>
+2179432 23:25:35.652530 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 186) = 1 ([{fd=11, revents=POLLOUT}]) <0.000145>
+2179432 23:25:35.652865 writev(11, [{iov_base="h", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:35.653087 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 185) = 1 ([{fd=11, revents=POLLIN}]) <0.000179>
+2179432 23:25:35.653382 ioctl(11, FIONREAD, [1]) = 0 <0.000042>
+2179432 23:25:35.653513 readv(11, [{iov_base="h", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:35.653679 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000053>
+2179432 23:25:35.653864 writev(7, [{iov_base="h", iov_len=1}], 1) = 1 <0.000086>
+2179432 23:25:35.654053 writev(10, [{iov_base="h", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:35.654205 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009137>
+2179432 23:25:35.663459 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 175) = 0 (Timeout) <0.175794>
+2179432 23:25:35.839673 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000241>
+2179432 23:25:35.840283 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000251>
+2179432 23:25:35.840810 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000177>
+2179432 23:25:35.841123 read(13, "kiro-cli\0", 1024) = 9 <0.000054>
+2179432 23:25:35.841240 close(13)       = 0 <0.000037>
+2179432 23:25:35.841357 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 12901) = 1 ([{fd=7, revents=POLLIN}]) <0.639165>
+2179432 23:25:36.480919 ioctl(7, FIONREAD, [1]) = 0 <0.000257>
+2179432 23:25:36.481663 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000249>
+2179432 23:25:36.482340 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 12260) = 1 ([{fd=11, revents=POLLOUT}]) <0.000235>
+2179432 23:25:36.482774 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:36.482949 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 12260) = 1 ([{fd=11, revents=POLLIN}]) <0.000187>
+2179432 23:25:36.483267 ioctl(11, FIONREAD, [1]) = 0 <0.000150>
+2179432 23:25:36.483510 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000055>
+2179432 23:25:36.483704 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000033>
+2179432 23:25:36.483795 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000085>
+2179432 23:25:36.484059 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000160>
+2179432 23:25:36.484432 read(13, "kiro-cli\0", 1024) = 9 <0.000114>
+2179432 23:25:36.484664 close(13)       = 0 <0.000103>
+2179432 23:25:36.484909 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000113>
+2179432 23:25:36.485182 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000104>
+2179432 23:25:36.485395 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:36.485562 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008127>
+2179432 23:25:36.493931 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 12248) = 1 ([{fd=7, revents=POLLIN}]) <0.049523>
+2179432 23:25:36.543844 ioctl(7, FIONREAD, [1]) = 0 <0.000226>
+2179432 23:25:36.544427 readv(7, [{iov_base="s", iov_len=1}], 1) = 1 <0.000168>
+2179432 23:25:36.544907 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 12198) = 1 ([{fd=11, revents=POLLOUT}]) <0.000181>
+2179432 23:25:36.545270 writev(11, [{iov_base="s", iov_len=1}], 1) = 1 <0.000142>
+2179432 23:25:36.545657 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 12197) = 1 ([{fd=11, revents=POLLIN}]) <0.000071>
+2179432 23:25:36.545914 ioctl(11, FIONREAD, [1]) = 0 <0.000048>
+2179432 23:25:36.546104 readv(11, [{iov_base="s", iov_len=1}], 1) = 1 <0.000126>
+2179432 23:25:36.546390 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:36.546528 writev(7, [{iov_base="s", iov_len=1}], 1) = 1 <0.000036>
+2179432 23:25:36.546621 writev(10, [{iov_base="s", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:36.546711 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009114>
+2179432 23:25:36.555961 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 428) = 1 ([{fd=7, revents=POLLIN}]) <0.129722>
+2179432 23:25:36.686112 ioctl(7, FIONREAD, [1]) = 0 <0.000216>
+2179432 23:25:36.686642 readv(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000136>
+2179432 23:25:36.687095 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 297) = 1 ([{fd=11, revents=POLLOUT}]) <0.000149>
+2179432 23:25:36.687356 writev(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000075>
+2179432 23:25:36.687516 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 297) = 1 ([{fd=11, revents=POLLIN}]) <0.000240>
+2179432 23:25:36.687824 ioctl(11, FIONREAD, [1]) = 0 <0.000030>
+2179432 23:25:36.687911 readv(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:36.688056 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000034>
+2179432 23:25:36.688170 writev(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:36.688262 writev(10, [{iov_base="p", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:36.688356 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009111>
+2179432 23:25:36.697541 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 287) = 1 ([{fd=7, revents=POLLIN}]) <0.099276>
+2179432 23:25:36.797206 ioctl(7, FIONREAD, [1]) = 0 <0.000226>
+2179432 23:25:36.798225 readv(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000162>
+2179432 23:25:36.798688 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 186) = 1 ([{fd=11, revents=POLLOUT}]) <0.000195>
+2179432 23:25:36.799007 writev(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000045>
+2179432 23:25:36.799137 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 185) = 1 ([{fd=11, revents=POLLIN}]) <0.000213>
+2179432 23:25:36.799423 ioctl(11, FIONREAD, [1]) = 0 <0.000030>
+2179432 23:25:36.799509 readv(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:36.799622 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000035>
+2179432 23:25:36.799726 writev(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:36.799818 writev(10, [{iov_base="e", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:36.799927 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010112>
+2179432 23:25:36.810134 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 174) = 0 (Timeout) <0.174534>
+2179432 23:25:36.985107 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000256>
+2179432 23:25:36.985654 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000152>
+2179432 23:25:36.985955 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000233>
+2179432 23:25:36.986349 read(13, "kiro-cli\0", 1024) = 9 <0.000142>
+2179432 23:25:36.986640 close(13)       = 0 <0.000047>
+2179432 23:25:36.986884 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 11756) = 1 ([{fd=7, revents=POLLIN}]) <0.006791>
+2179432 23:25:36.993869 ioctl(7, FIONREAD, [1]) = 0 <0.000048>
+2179432 23:25:36.993978 readv(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000039>
+2179432 23:25:36.994132 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 11748) = 1 ([{fd=11, revents=POLLOUT}]) <0.000041>
+2179432 23:25:36.994240 writev(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000038>
+2179432 23:25:36.994338 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 11748) = 1 ([{fd=11, revents=POLLIN}]) <0.000131>
+2179432 23:25:36.994533 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:36.994611 readv(11, [{iov_base="e", iov_len=1}], 1) = 1 <0.000031>
+2179432 23:25:36.994714 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000035>
+2179432 23:25:36.994813 writev(7, [{iov_base="e", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:36.994910 writev(10, [{iov_base="e", iov_len=1}], 1) = 1 <0.000039>
+2179432 23:25:36.995014 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009105>
+2179432 23:25:37.004194 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 481) = 1 ([{fd=7, revents=POLLIN}]) <0.110189>
+2179432 23:25:37.114748 ioctl(7, FIONREAD, [1]) = 0 <0.000259>
+2179432 23:25:37.115374 readv(7, [{iov_base="d", iov_len=1}], 1) = 1 <0.000222>
+2179432 23:25:37.115958 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 370) = 1 ([{fd=11, revents=POLLOUT}]) <0.000165>
+2179432 23:25:37.116256 writev(11, [{iov_base="d", iov_len=1}], 1) = 1 <0.000045>
+2179432 23:25:37.116383 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 369) = 1 ([{fd=11, revents=POLLIN}]) <0.000113>
+2179432 23:25:37.116562 ioctl(11, FIONREAD, [1]) = 0 <0.000032>
+2179432 23:25:37.116647 readv(11, [{iov_base="d", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:37.116779 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:37.116904 writev(7, [{iov_base="d", iov_len=1}], 1) = 1 <0.000039>
+2179432 23:25:37.117017 writev(10, [{iov_base="d", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:37.117110 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009111>
+2179432 23:25:37.126292 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 359) = 1 ([{fd=7, revents=POLLIN}]) <0.277510>
+2179432 23:25:37.404304 ioctl(7, FIONREAD, [1]) = 0 <0.000235>
+2179432 23:25:37.404823 readv(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000163>
+2179432 23:25:37.405272 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 80) = 1 ([{fd=11, revents=POLLOUT}]) <0.000069>
+2179432 23:25:37.405426 writev(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:37.405536 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 80) = 1 ([{fd=11, revents=POLLIN}]) <0.000144>
+2179432 23:25:37.405746 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:37.405827 readv(11, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:37.405968 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000035>
+2179432 23:25:37.406070 writev(7, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:37.406159 writev(10, [{iov_base=" ", iov_len=1}], 1) = 1 <0.000034>
+2179432 23:25:37.406248 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009109>
+2179432 23:25:37.415426 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 70) = 0 (Timeout) <0.070400>
+2179432 23:25:37.486250 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000225>
+2179432 23:25:37.486772 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000343>
+2179432 23:25:37.487466 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000148>
+2179432 23:25:37.487962 read(13, "kiro-cli\0", 1024) = 9 <0.000214>
+2179432 23:25:37.488427 close(13)       = 0 <0.000126>
+2179432 23:25:37.488721 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 11254) = 1 ([{fd=7, revents=POLLIN}]) <1.211900>
+2179432 23:25:38.701076 ioctl(7, FIONREAD, [1]) = 0 <0.000236>
+2179432 23:25:38.701772 readv(7, [{iov_base="z", iov_len=1}], 1) = 1 <0.000276>
+2179432 23:25:38.702462 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 10040) = 1 ([{fd=11, revents=POLLOUT}]) <0.000095>
+2179432 23:25:38.702749 writev(11, [{iov_base="z", iov_len=1}], 1) = 1 <0.000057>
+2179432 23:25:38.702915 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10040) = 1 ([{fd=11, revents=POLLIN}]) <0.000181>
+2179432 23:25:38.703251 ioctl(11, FIONREAD, [1]) = 0 <0.000046>
+2179432 23:25:38.703389 readv(11, [{iov_base="z", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:38.703588 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000046>
+2179432 23:25:38.703729 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000084>
+2179432 23:25:38.703934 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000048>
+2179432 23:25:38.704098 read(13, "kiro-cli\0", 1024) = 9 <0.000061>
+2179432 23:25:38.704251 close(13)       = 0 <0.000046>
+2179432 23:25:38.704401 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000054>
+2179432 23:25:38.704560 writev(7, [{iov_base="z", iov_len=1}], 1) = 1 <0.000051>
+2179432 23:25:38.704705 writev(10, [{iov_base="z", iov_len=1}], 1) = 1 <0.000238>
+2179432 23:25:38.705275 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008354>
+2179432 23:25:38.713918 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10029) = 1 ([{fd=7, revents=POLLIN}]) <0.222771>
+2179432 23:25:38.937369 ioctl(7, FIONREAD, [1]) = 0 <0.000266>
+2179432 23:25:38.938090 readv(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000298>
+2179432 23:25:38.938854 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 9804) = 1 ([{fd=11, revents=POLLOUT}]) <0.000289>
+2179432 23:25:38.939502 writev(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000133>
+2179432 23:25:38.939843 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9803) = 1 ([{fd=11, revents=POLLIN}]) <0.000157>
+2179432 23:25:38.940151 ioctl(11, FIONREAD, [1]) = 0 <0.000110>
+2179432 23:25:38.940370 readv(11, [{iov_base="k", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:38.940526 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000044>
+2179432 23:25:38.940667 writev(10, [{iov_base="k", iov_len=1}], 1) = 1 <0.000044>
+2179432 23:25:38.940784 writev(7, [{iov_base="k", iov_len=1}], 1) = 1 <0.000042>
+2179432 23:25:38.940900 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010130>
+2179432 23:25:38.951157 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 253) = 0 (Timeout) <0.253641>
+2179432 23:25:39.205438 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000283>
+2179432 23:25:39.206238 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000293>
+2179432 23:25:39.207022 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000163>
+2179432 23:25:39.207433 read(13, "kiro-cli\0", 1024) = 9 <0.000066>
+2179432 23:25:39.207595 close(13)       = 0 <0.000042>
+2179432 23:25:39.207736 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9535) = 1 ([{fd=7, revents=POLLIN}]) <1.883790>
+2179432 23:25:41.092056 ioctl(7, FIONREAD, [1]) = 0 <0.000312>
+2179432 23:25:41.092750 readv(7, [{iov_base="m", iov_len=1}], 1) = 1 <0.000230>
+2179432 23:25:41.093382 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 7649) = 1 ([{fd=11, revents=POLLOUT}]) <0.000163>
+2179432 23:25:41.093750 writev(11, [{iov_base="m", iov_len=1}], 1) = 1 <0.000153>
+2179432 23:25:41.094363 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7648) = 1 ([{fd=11, revents=POLLIN}]) <0.000239>
+2179432 23:25:41.094839 ioctl(11, FIONREAD, [1]) = 0 <0.000166>
+2179432 23:25:41.095166 readv(11, [{iov_base="m", iov_len=1}], 1) = 1 <0.000138>
+2179432 23:25:41.095519 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000045>
+2179432 23:25:41.095651 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000059>
+2179432 23:25:41.095773 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000032>
+2179432 23:25:41.095870 read(13, "kiro-cli\0", 1024) = 9 <0.000064>
+2179432 23:25:41.096001 close(13)       = 0 <0.000035>
+2179432 23:25:41.096104 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000045>
+2179432 23:25:41.096228 writev(10, [{iov_base="m", iov_len=1}], 1) = 1 <0.000038>
+2179432 23:25:41.096322 writev(7, [{iov_base="m", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:41.096416 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008108>
+2179432 23:25:41.104594 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7638) = 1 ([{fd=7, revents=POLLIN}]) <0.367208>
+2179432 23:25:41.472216 ioctl(7, FIONREAD, [1]) = 0 <0.000227>
+2179432 23:25:41.472805 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000247>
+2179432 23:25:41.473466 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 7269) = 1 ([{fd=11, revents=POLLOUT}]) <0.000321>
+2179432 23:25:41.474402 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000159>
+2179432 23:25:41.474859 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7268) = 1 ([{fd=11, revents=POLLIN}]) <0.000226>
+2179432 23:25:41.475348 ioctl(11, FIONREAD, [78]) = 0 <0.000118>
+2179432 23:25:41.475622 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=78}], 1) = 78 <0.000113>
+2179432 23:25:41.476272 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000127>
+2179432 23:25:41.476602 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=69}], 1) = 69 <0.000048>
+2179432 23:25:41.476761 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=79}], 1) = 79 <0.000039>
+2179432 23:25:41.476894 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009126>
+2179432 23:25:41.486166 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 110) = 0 (Timeout) <0.110408>
+2179432 23:25:41.596985 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000251>
+2179432 23:25:41.597679 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000134>
+2179432 23:25:41.598188 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000231>
+2179432 23:25:41.598597 read(13, "kiro-cli\0", 1024) = 9 <0.000060>
+2179432 23:25:41.598762 close(13)       = 0 <0.000041>
+2179432 23:25:41.598908 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 7144) = 1 ([{fd=7, revents=POLLIN}]) <0.382692>
+2179432 23:25:41.982070 ioctl(7, FIONREAD, [1]) = 0 <0.000219>
+2179432 23:25:41.983119 readv(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000205>
+2179432 23:25:41.983744 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 6759) = 1 ([{fd=11, revents=POLLOUT}]) <0.000217>
+2179432 23:25:41.984179 writev(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000058>
+2179432 23:25:41.984375 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6758) = 1 ([{fd=11, revents=POLLIN}]) <0.000179>
+2179432 23:25:41.984674 ioctl(11, FIONREAD, [1]) = 0 <0.000045>
+2179432 23:25:41.984818 readv(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:41.985023 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000071>
+2179432 23:25:41.985222 writev(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:41.985374 writev(10, [{iov_base="r", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:41.985530 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009140>
+2179432 23:25:41.994794 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 102) = 1 ([{fd=7, revents=POLLIN}]) <0.009181>
+2179432 23:25:42.004101 ioctl(7, FIONREAD, [1]) = 0 <0.000064>
+2179432 23:25:42.004267 readv(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000050>
+2179432 23:25:42.004454 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 93) = 1 ([{fd=11, revents=POLLOUT}]) <0.000063>
+2179432 23:25:42.004659 writev(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000048>
+2179432 23:25:42.004807 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 93) = 1 ([{fd=11, revents=POLLIN}]) <0.000185>
+2179432 23:25:42.005120 ioctl(11, FIONREAD, [1]) = 0 <0.000044>
+2179432 23:25:42.005251 readv(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000045>
+2179432 23:25:42.005403 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000050>
+2179432 23:25:42.005557 writev(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:42.005697 writev(10, [{iov_base="p", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:42.005840 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010144>
+2179432 23:25:42.016105 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 81) = 0 (Timeout) <0.081479>
+2179432 23:25:42.097912 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000279>
+2179432 23:25:42.098746 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000266>
+2179432 23:25:42.099363 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000216>
+2179432 23:25:42.099763 read(13, "kiro-cli\0", 1024) = 9 <0.000066>
+2179432 23:25:42.099978 close(13)       = 0 <0.000050>
+2179432 23:25:42.100179 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 6642) = 1 ([{fd=7, revents=POLLIN}]) <0.944248>
+2179432 23:25:43.044814 ioctl(7, FIONREAD, [1]) = 0 <0.000201>
+2179432 23:25:43.045591 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000210>
+2179432 23:25:43.046517 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5696) = 1 ([{fd=11, revents=POLLOUT}]) <0.000230>
+2179432 23:25:43.047024 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000074>
+2179432 23:25:43.047447 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5695) = 1 ([{fd=11, revents=POLLIN}]) <0.000166>
+2179432 23:25:43.047742 ioctl(11, FIONREAD, [79]) = 0 <0.000046>
+2179432 23:25:43.047886 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=79}], 1) = 79 <0.000079>
+2179432 23:25:43.048318 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000050>
+2179432 23:25:43.048469 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000077>
+2179432 23:25:43.048648 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000044>
+2179432 23:25:43.048801 read(13, "kiro-cli\0", 1024) = 9 <0.000087>
+2179432 23:25:43.049024 close(13)       = 0 <0.000048>
+2179432 23:25:43.049177 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000060>
+2179432 23:25:43.049393 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=70}], 1) = 70 <0.000052>
+2179432 23:25:43.049543 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=80}], 1) = 80 <0.000047>
+2179432 23:25:43.049709 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008140>
+2179432 23:25:43.057999 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5684) = 1 ([{fd=7, revents=POLLIN}]) <0.351417>
+2179432 23:25:43.409799 ioctl(7, FIONREAD, [1]) = 0 <0.000227>
+2179432 23:25:43.410368 readv(7, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000202>
+2179432 23:25:43.410864 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5332) = 1 ([{fd=11, revents=POLLOUT}]) <0.000237>
+2179432 23:25:43.411342 writev(11, [{iov_base="\177", iov_len=1}], 1) = 1 <0.000059>
+2179432 23:25:43.411540 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5331) = 1 ([{fd=11, revents=POLLIN}]) <0.000226>
+2179432 23:25:43.411885 ioctl(11, FIONREAD, [78]) = 0 <0.000095>
+2179432 23:25:43.412090 readv(11, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[0m\33[38;5;93m>"..., iov_len=78}], 1) = 78 <0.000048>
+2179432 23:25:43.412347 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000055>
+2179432 23:25:43.412518 writev(7, [{iov_base="\r\33[K\33[38;5;39m\316\273 \33[38;5;93m> \33[3"..., iov_len=69}], 1) = 69 <0.000051>
+2179432 23:25:43.412664 writev(10, [{iov_base="\33[29;167H\33[1K\r\33[38;5;39m\316\273 \33[38;"..., iov_len=79}], 1) = 79 <0.000065>
+2179432 23:25:43.412835 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009140>
+2179432 23:25:43.422095 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 126) = 0 (Timeout) <0.126531>
+2179432 23:25:43.549356 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000243>
+2179432 23:25:43.549985 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000271>
+2179432 23:25:43.550633 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000249>
+2179432 23:25:43.551185 read(13, "kiro-cli\0", 1024) = 9 <0.000088>
+2179432 23:25:43.551364 close(13)       = 0 <0.000038>
+2179432 23:25:43.551490 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5191) = 1 ([{fd=7, revents=POLLIN}]) <0.051682>
+2179432 23:25:43.603601 ioctl(7, FIONREAD, [1]) = 0 <0.000292>
+2179432 23:25:43.604457 readv(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000233>
+2179432 23:25:43.605156 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 5137) = 1 ([{fd=11, revents=POLLOUT}]) <0.000249>
+2179432 23:25:43.605675 writev(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000159>
+2179432 23:25:43.606041 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 5136) = 1 ([{fd=11, revents=POLLIN}]) <0.000042>
+2179432 23:25:43.606172 ioctl(11, FIONREAD, [1]) = 0 <0.000030>
+2179432 23:25:43.606260 readv(11, [{iov_base="p", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:43.606373 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000033>
+2179432 23:25:43.606471 writev(10, [{iov_base="p", iov_len=1}], 1) = 1 <0.000144>
+2179432 23:25:43.606730 writev(7, [{iov_base="p", iov_len=1}], 1) = 1 <0.000116>
+2179432 23:25:43.606982 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009109>
+2179432 23:25:43.616167 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 433) = 1 ([{fd=7, revents=POLLIN}]) <0.116307>
+2179432 23:25:43.732840 ioctl(7, FIONREAD, [1]) = 0 <0.000220>
+2179432 23:25:43.733419 readv(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000233>
+2179432 23:25:43.733892 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 316) = 1 ([{fd=11, revents=POLLOUT}]) <0.000102>
+2179432 23:25:43.734258 writev(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000043>
+2179432 23:25:43.734414 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 315) = 1 ([{fd=11, revents=POLLIN}]) <0.000213>
+2179432 23:25:43.734696 ioctl(11, FIONREAD, [1]) = 0 <0.000030>
+2179432 23:25:43.734779 readv(11, [{iov_base="r", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:43.734889 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000058>
+2179432 23:25:43.735016 writev(7, [{iov_base="r", iov_len=1}], 1) = 1 <0.000045>
+2179432 23:25:43.735119 writev(10, [{iov_base="r", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:43.735218 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009117>
+2179432 23:25:43.744411 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 305) = 1 ([{fd=7, revents=POLLIN}]) <0.104414>
+2179432 23:25:43.849245 ioctl(7, FIONREAD, [1]) = 0 <0.000241>
+2179432 23:25:43.849854 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000233>
+2179432 23:25:43.850468 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 199) = 1 ([{fd=11, revents=POLLOUT}]) <0.000173>
+2179432 23:25:43.850787 writev(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000046>
+2179432 23:25:43.850983 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 198) = 1 ([{fd=11, revents=POLLIN}]) <0.000156>
+2179432 23:25:43.851211 ioctl(11, FIONREAD, [1]) = 0 <0.000031>
+2179432 23:25:43.851296 readv(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000032>
+2179432 23:25:43.851409 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000036>
+2179432 23:25:43.851521 writev(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:43.851611 writev(10, [{iov_base="o", iov_len=1}], 1) = 1 <0.000035>
+2179432 23:25:43.851709 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 0 (Timeout) <0.010114>
+2179432 23:25:43.861895 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 187) = 0 (Timeout) <0.187560>
+2179432 23:25:44.049847 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000234>
+2179432 23:25:44.050394 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000181>
+2179432 23:25:44.050701 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000147>
+2179432 23:25:44.051021 read(13, "kiro-cli\0", 1024) = 9 <0.000251>
+2179432 23:25:44.051439 close(13)       = 0 <0.000142>
+2179432 23:25:44.051802 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4691) = 1 ([{fd=7, revents=POLLIN}]) <0.035711>
+2179432 23:25:44.088013 ioctl(7, FIONREAD, [1]) = 0 <0.000233>
+2179432 23:25:44.088721 readv(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000146>
+2179432 23:25:44.089266 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 4653) = 1 ([{fd=11, revents=POLLOUT}]) <0.000071>
+2179432 23:25:44.089482 writev(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000160>
+2179432 23:25:44.089780 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4653) = 1 ([{fd=11, revents=POLLIN}]) <0.000039>
+2179432 23:25:44.089885 ioctl(11, FIONREAD, [1]) = 0 <0.000054>
+2179432 23:25:44.090012 readv(11, [{iov_base="l", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:44.090121 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000034>
+2179432 23:25:44.090219 writev(10, [{iov_base="l", iov_len=1}], 1) = 1 <0.000151>
+2179432 23:25:44.090481 writev(7, [{iov_base="l", iov_len=1}], 1) = 1 <0.000127>
+2179432 23:25:44.090710 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009127>
+2179432 23:25:44.099937 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 1) = 0 (Timeout) <0.001100>
+2179432 23:25:44.101109 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 449) = 1 ([{fd=7, revents=POLLIN}]) <0.175018>
+2179432 23:25:44.276485 ioctl(7, FIONREAD, [1]) = 0 <0.000232>
+2179432 23:25:44.277094 readv(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000234>
+2179432 23:25:44.277772 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 273) = 1 ([{fd=11, revents=POLLOUT}]) <0.000180>
+2179432 23:25:44.278118 writev(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000171>
+2179432 23:25:44.278457 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 272) = 1 ([{fd=11, revents=POLLIN}]) <0.000042>
+2179432 23:25:44.278570 ioctl(11, FIONREAD, [1]) = 0 <0.000030>
+2179432 23:25:44.278654 readv(11, [{iov_base="o", iov_len=1}], 1) = 1 <0.000033>
+2179432 23:25:44.278763 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000033>
+2179432 23:25:44.278882 writev(7, [{iov_base="o", iov_len=1}], 1) = 1 <0.000173>
+2179432 23:25:44.279195 writev(10, [{iov_base="o", iov_len=1}], 1) = 1 <0.000119>
+2179432 23:25:44.279418 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009114>
+2179432 23:25:44.288609 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 261) = 1 ([{fd=7, revents=POLLIN}]) <0.098619>
+2179432 23:25:44.387580 ioctl(7, FIONREAD, [1]) = 0 <0.000246>
+2179432 23:25:44.388217 readv(7, [{iov_base="g", iov_len=1}], 1) = 1 <0.000190>
+2179432 23:25:44.388615 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN|POLLOUT}], 9, 162) = 1 ([{fd=11, revents=POLLOUT}]) <0.000056>
+2179432 23:25:44.388751 writev(11, [{iov_base="g", iov_len=1}], 1) = 1 <0.000052>
+2179432 23:25:44.388864 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 162) = 1 ([{fd=11, revents=POLLIN}]) <0.000145>
+2179432 23:25:44.389218 ioctl(11, FIONREAD, [1]) = 0 <0.000157>
+2179432 23:25:44.389530 readv(11, [{iov_base="g", iov_len=1}], 1) = 1 <0.000104>
+2179432 23:25:44.389786 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 10) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000148>
+2179432 23:25:44.390111 writev(7, [{iov_base="g", iov_len=1}], 1) = 1 <0.000107>
+2179432 23:25:44.390326 writev(10, [{iov_base="g", iov_len=1}], 1) = 1 <0.000047>
+2179432 23:25:44.390454 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 9) = 0 (Timeout) <0.009224>
+2179432 23:25:44.399840 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 150) = 0 (Timeout) <0.150537>
+2179432 23:25:44.550841 ioctl(11, TIOCGPGRP, [1551344]) = 0 <0.000289>
+2179432 23:25:44.551552 openat(AT_FDCWD, "/proc/1551344/cmdline", O_RDONLY) = 13 <0.000297>
+2179432 23:25:44.552240 newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0 <0.000279>
+2179432 23:25:44.552760 read(13, "kiro-cli\0", 1024) = 9 <0.000216>
+2179432 23:25:44.553286 close(13)       = 0 <0.000179>
+2179432 23:25:44.553733 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=12, events=POLLIN}, {fd=11, events=POLLIN}], 9, 4189) = 1 ([{fd=8, revents=POLLIN}]) <0.208815>
+2179432 23:25:44.762913 ioctl(8, FIONREAD, [27]) = 0 <0.000194>
+2179432 23:25:44.763392 readv(8, [{iov_base="\r\n\360\237\233\221 Stopping traces...\r\n", iov_len=27}], 1) = 27 <0.000153>
+2179432 23:25:44.763883 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN|POLLOUT}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN|POLLOUT}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 9) = 2 ([{fd=7, revents=POLLOUT}, {fd=10, revents=POLLOUT}]) <0.000149>
+2179432 23:25:44.764224 writev(7, [{iov_base="\33[1;19r\33[19;167H\n\r\33[K\360\237\233\221\33[19;16"..., iov_len=81}], 1) = 81 <0.000133>
+2179432 23:25:44.764503 writev(10, [{iov_base="\33[1;19r\33[1;19r\33[1;167s\33[19;167H\n"..., iov_len=146}], 1) = 146 <0.000124>
+2179432 23:25:44.764826 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 8) = 0 (Timeout) <0.008232>
+2179432 23:25:44.773317 poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=7, events=POLLIN}, {fd=5, events=POLLIN}, {fd=10, events=POLLIN}, {fd=6, events=POLLIN}, {fd=11, events=POLLIN}, {fd=12, events=POLLIN}, {fd=8, events=POLLIN}], 9, 3969 <detached ...>

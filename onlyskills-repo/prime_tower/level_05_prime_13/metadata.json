@@ -1,0 +1,15 @@
+{
+  "level": 5,
+  "prime": 13,
+  "files": [
+    {
+      "path": "./target/release/build/serde_core-f43ed077ee32ec71/out/private.rs",
+      "functions": 0,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 5
+    }
+  ],
+  "total_complexity": 5,
+  "avg_complexity": 5
+}

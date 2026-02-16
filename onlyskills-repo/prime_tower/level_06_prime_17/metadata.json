@@ -1,0 +1,29 @@
+{
+  "level": 6,
+  "prime": 17,
+  "files": [
+    {
+      "path": "./target/release/build/serde-5305a079c5d0efe8/out/private.rs",
+      "functions": 0,
+      "structs": 0,
+      "enums": 0,
+      "complexity": 6
+    },
+    {
+      "path": "./src/wasm.rs",
+      "functions": 1,
+      "structs": 1,
+      "enums": 0,
+      "complexity": 77
+    },
+    {
+      "path": "./src/bin/vile_code_evaluator.rs",
+      "functions": 8,
+      "structs": 4,
+      "enums": 0,
+      "complexity": 361
+    }
+  ],
+  "total_complexity": 444,
+  "avg_complexity": 148
+}

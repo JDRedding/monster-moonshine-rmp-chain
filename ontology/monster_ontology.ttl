@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix monster: <http://monster.ai/ontology#> .
+@prefix erdfa: <http://www.w3.org/ns/rdfa#> .
+
+# Monster Project Ontology with ERDFA
+
+monster:Ontology a owl:Ontology ;
+    rdfs:label "Monster Project Ontology" ;
+    rdfs:comment "Formal ontology for Monster Group analysis tools" ;
+    owl:versionInfo "1.0" .
+
+# Classes
+
+monster:Tool a owl:Class ;
+    rdfs:label "Tool" ;
+    rdfs:comment "A software tool in the Monster project" .
+
+monster:Conversion a owl:Class ;
+    rdfs:label "Conversion" ;
+    rdfs:comment "Python to Rust conversion" .
+
+monster:Performance a owl:Class ;
+    rdfs:label "Performance" ;
+    rdfs:comment "Performance metric" .
+
+monster:Workflow a owl:Class ;
+    rdfs:label "Workflow" ;
+    rdfs:comment "Multi-step workflow" .
+
+monster:Finding a owl:Class ;
+    rdfs:label "Finding" ;
+    rdfs:comment "Research finding" .
+
+monster:ZKProof a owl:Class ;
+    rdfs:label "ZK Proof" ;
+    rdfs:comment "Zero-knowledge proof" .
+
+# Properties
+
+monster:hasScore a owl:DatatypeProperty ;
+    rdfs:domain monster:Tool ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "has score" .
+
+monster:hasCategory a owl:ObjectProperty ;
+    rdfs:domain monster:Tool ;
+    rdfs:range monster:Category ;
+    rdfs:label "has category" .
+
+monster:hasFeatures a owl:DatatypeProperty ;
+    rdfs:domain monster:Tool ;
+    rdfs:range xsd:string ;
+    rdfs:label "has features" .
+
+monster:hasZKProof a owl:ObjectProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range monster:ZKProof ;
+    rdfs:label "has ZK proof" .
+
+monster:convertedFrom a owl:ObjectProperty ;
+    rdfs:domain monster:Tool ;
+    rdfs:range xsd:string ;
+    rdfs:label "converted from" .
+
+monster:convertedTo a owl:ObjectProperty ;
+    rdfs:domain monster:Tool ;
+    rdfs:range xsd:string ;
+    rdfs:label "converted to" .
+
+monster:hasStatus a owl:DatatypeProperty ;
+    rdfs:domain monster:Conversion ;
+    rdfs:range xsd:string ;
+    rdfs:label "has status" .
+
+monster:hasValue a owl:DatatypeProperty ;
+    rdfs:domain monster:Performance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "has value" .
+
+# Categories
+
+monster:ZK71 a monster:Category ;
+    rdfs:label "ZK71" ;
+    rdfs:comment "Tools with perfect ZK71 alignment (3.0)" .
+
+monster:Monster a monster:Category ;
+    rdfs:label "Monster" ;
+    rdfs:comment "Tools with Monster alignment (2.0)" .
+
+monster:Hecke a monster:Category ;
+    rdfs:label "Hecke" ;
+    rdfs:comment "Tools with Hecke alignment (1.0)" .
+
+monster:GPU a monster:Category ;
+    rdfs:label "GPU" ;
+    rdfs:comment "GPU-accelerated tools" .
+
+monster:Parquet a monster:Category ;
+    rdfs:label "Parquet" ;
+    rdfs:comment "Tools using Parquet format" .
+
+# Instances (Top 5 Tools)
+
+monster:prime_resonance_hecke a monster:Tool ;
+    rdfs:label "prime_resonance_hecke" ;
+    monster:hasScore "65.5"^^xsd:decimal ;
+    monster:hasCategory monster:Hecke ;
+    monster:hasFeatures "functions(13), structs(10), impls(7)" .
+
+monster:cuda_monster_pipeline a monster:Tool ;
+    rdfs:label "cuda_monster_pipeline" ;
+    monster:hasScore "65.0"^^xsd:decimal ;
+    monster:hasCategory monster:Monster ;
+    monster:hasFeatures "functions(24), structs(6), impls(3)" .
+
+monster:monster_is_meme a monster:Tool ;
+    rdfs:label "monster_is_meme" ;
+    monster:hasScore "54.0"^^xsd:decimal ;
+    monster:hasCategory monster:Monster ;
+    monster:hasFeatures "functions(10), structs(6), impls(4)" .
+
+monster:zk71_kernel_overlay a monster:Tool ;
+    rdfs:label "zk71_kernel_overlay" ;
+    monster:hasScore "45.5"^^xsd:decimal ;
+    monster:hasCategory monster:ZK71 ;
+    monster:hasFeatures "functions(4), parquet(2), alignment(3.0)" .
+
+monster:zk71_integration_test a monster:Tool ;
+    rdfs:label "zk71_integration_test" ;
+    monster:hasScore "44.5"^^xsd:decimal ;
+    monster:hasCategory monster:ZK71 ;
+    monster:hasFeatures "functions(8), structs(1), alignment(3.0)" .
+
+# Performance Metrics
+
+monster:speedup a monster:Performance ;
+    rdfs:label "speedup" ;
+    monster:hasValue "62.2"^^xsd:decimal ;
+    rdfs:comment "Python to Rust speedup" .
+
+monster:total_tools a monster:Performance ;
+    rdfs:label "total_tools" ;
+    monster:hasValue "111"^^xsd:decimal ;
+    rdfs:comment "Total number of tools" .
+
+# Conversions
+
+monster:conversion_prove_zk_rdfa a monster:Conversion ;
+    rdfs:label "prove_zk_rdfa conversion" ;
+    monster:convertedFrom "prove_zk_rdfa.py" ;
+    monster:convertedTo "src/bin/prove_zk_rdfa_rust.rs" ;
+    monster:hasStatus "new" .
+
+# ERDFA Annotations
+
+monster:Tool erdfa:usesVocabulary monster:Ontology .
+monster:Conversion erdfa:usesVocabulary monster:Ontology .
+monster:Performance erdfa:usesVocabulary monster:Ontology .

@@ -2,7 +2,7 @@
 -- Complete walk showing primes removed at each step
 
 import Mathlib.Data.Nat.Basic
-import Mathlib.Data.Nat.Digits
+import Mathlib.Data.Nat.Digits.Defs
 import Mathlib.Tactic
 
 namespace MonsterWalkPrimes

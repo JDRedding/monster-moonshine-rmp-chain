@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "DAG-JSON mapping p-adic valuations of the Monster group sporadic simple group irreducible representations (OEIS A001379) for the 15 supersingular primes.",
+  "metadata": {
+    "group": "Monster (M)",
+    "order": "~8.08e53",
+    "total_irreps": 194,
+    "proof_reference": "Borcherds (1992)",
+    "prime_basis": [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71],
+    "logsum_formula": "sum(exp_p * log(p))"
+  },
+  "dag_layers": {
+    "root_config": {
+      "id": "SSP_VALUATIONS",
+      "type": "valuation_matrix"
+    },
+    "nodes": [
+      {
+        "irrep_ids": [193],
+        "exponents": [0, 12, 7, 0, 0, 3, 1, 0, 1, 1, 1, 1, 1, 1, 1],
+        "metrics": { "sum": 30, "logsum": 26.41300367 }
+      },
+      {
+        "irrep_ids": [192],
+        "exponents": [46, 2, 0, 0, 2, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1],
+        "metrics": { "sum": 56, "logsum": 26.38357651 }
+      },
+      {
+        "irrep_ids": [191],
+        "exponents": [1, 6, 8, 6, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        "metrics": { "sum": 29, "logsum": 26.327339 }
+      },
+      {
+        "irrep_ids": [180],
+        "exponents": [44, 0, 0, 6, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1],
+        "metrics": { "sum": 55, "logsum": 26.14297902 }
+      },
+      {
+        "irrep_ids": [178, 179],
+        "notes": "Identical valuation twins",
+        "exponents": [0, 4, 0, 6, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "metrics": { "sum": 24, "logsum": 26.13537081 }
+      },
+      {
+        "irrep_ids": [144],
+        "exponents": [28, 1, 0, 1, 1, 2, 1, 0, 1, 1, 1, 1, 1, 1, 1],
+        "metrics": { "sum": 41, "logsum": 25.47326709 }
+      },
+      {
+        "irrep_ids": [127, 128],
+        "exponents": [1, 0, 9, 6, 2, 2, 1, 1, 0, 1, 1, 0, 1, 1, 0],
+        "metrics": { "sum": 26, "logsum": 24.87893243 }
+      },
+      {
+        "irrep_ids": [122, 123, 124],
+        "notes": "Triple identical defect node block",
+        "exponents": [43, 0, 0, 0, 2, 2, 0, 1, 1, 1, 0, 1, 0, 1, 0],
+        "metrics": { "sum": 52, "logsum": 24.74147719 }
+      },
+      {
+        "irrep_ids": [101, 102],
+        "exponents": [46, 0, 0, 0, 2, 3, 0, 0, 1, 0, 1, 0, 1, 0, 0],
+        "metrics": { "sum": 54, "logsum": 23.79718262 }
+      },
+      {
+        "irrep_ids": [54, 55],
+        "exponents": [0, 0, 9, 6, 2, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1],
+        "metrics": { "sum": 22, "logsum": 21.24751439 }
+      },
+      {
+        "irrep_ids": [15, 16],
+        "notes": "Low-dimension twin signatures",
+        "exponents": [0, 0, 9, 6, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        "metrics": { "sum": 19, "logsum": 15.95330617 }
+      },
+      {
+        "irrep_ids": [2],
+        "notes": "Highly smooth trivial boundary transition",
+        "exponents": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1],
+        "metrics": { "sum": 6, "logsum": 7.328315902 }
+      },
+      {
+        "irrep_ids": [1],
+        "notes": "The minimal non-trivial McKay representation; note factors 47, 59, 71",
+        "exponents": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+        "metrics": { "sum": 3, "logsum": 5.294208218 }
+      }
+    ]
+  }
+}

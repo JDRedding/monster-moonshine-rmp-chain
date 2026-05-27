@@ -1,7 +1,6 @@
-=============================================================================
-irreps_sum.tsv — p-adic valuations of Monster group irreducible representation dimensions
-=============================================================================
- DESCRIPTION:
+# irreps_sum.tsv — p-adic valuations of Monster group irreducible representation dimensions
+
+## DESCRIPTION:
    For each of the 194 irreducible representations of the Monster simple group M
    (dimensions given by OEIS A001379), this table records the exponent of each
    supersingular prime (SSP) in the irrep dimension — i.e., the p-adic valuation.
@@ -9,7 +8,7 @@ irreps_sum.tsv — p-adic valuations of Monster group irreducible representation
    Formally:  a(n, p) = v_p( A001379(n) )
    where v_p(x) is the p-adic valuation (exponent of prime p in factorisation of x).
 
- COLUMNS:
+## COLUMNS:
    n      — Index into OEIS A001379 (0 = trivial representation, dim=1;
             1 = smallest non-trivial irrep, dim=196883; …; 193)
    p      — Supersingular primes dividing |M| (the 15 primes p with p+1 | 24)
@@ -18,16 +17,16 @@ irreps_sum.tsv — p-adic valuations of Monster group irreducible representation
    NOTE: Row n=0 (trivial irrep, dim=1) has sum=0 for all primes and is omitted.
          Rows are sorted by sum descending.
 
- KEY PRIMES:
+## KEY PRIMES:
    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71
    These are exactly the 15 primes p for which p+1 divides 24 (supersingular primes).
 
- NOTABLE ROW (n=1, dim=196883):
+## NOTABLE ROW (n=1, dim=196883):
    196883 = 47 × 59 × 71  →  valuations: v_47=1, v_59=1, v_71=1, all others 0
    This is McKay's original observation: 196884 = 1 + 196883 links j-invariant
    coefficient j₁ to Monster irrep dimensions, birthing Monstrous Moonshine.
 
- DATA LINKS:
+ ## DATA LINKS:
    OEIS A001379 — Degrees of irreducible representations of Monster group M
    Conway & Norton (1979) — Monstrous Moonshine
    Borcherds (1992) — Proof of Monstrous Moonshine conject

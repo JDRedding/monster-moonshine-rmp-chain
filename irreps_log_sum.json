@@ -1,89 +1,140 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "DAG-JSON mapping p-adic valuations of the Monster group sporadic simple group irreducible representations (OEIS A001379) for the 15 supersingular primes.",
+  "description": "Updated DAG-JSON mapping p-adic valuations and multi-base entropy (bits/trits) of the Monster group irreducible representations (OEIS A001379) for the 15 supersingular primes.",
   "metadata": {
     "group": "Monster (M)",
     "order": "~8.08e53",
     "total_irreps": 194,
     "proof_reference": "Borcherds (1992)",
     "prime_basis": [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 47, 59, 71],
-    "logsum_formula": "sum(exp_p * log(p))"
+    "formulas": {
+      "logsum": "sum(exp_p * log(p))",
+      "bits": "logsum / log(2)",
+      "trits": "logsum / log(3)"
+    }
   },
   "dag_layers": {
     "root_config": {
-      "id": "SSP_VALUATIONS",
-      "type": "valuation_matrix"
+      "id": "SSP_VALUATIONS_V2",
+      "type": "entropy_valuation_matrix",
+      "global_max_bounds": {
+        "bits": 87.74209896,
+        "trits": 55.35910087
+      }
     },
     "nodes": [
       {
         "irrep_ids": [193],
+        "notes": "Saturates global group envelope limits for pure bits and trits",
         "exponents": [0, 12, 7, 0, 0, 3, 1, 0, 1, 1, 1, 1, 1, 1, 1],
-        "metrics": { "sum": 30, "logsum": 26.41300367 }
+        "metrics": { 
+          "sum": 30, 
+          "logsum": 26.41300367, 
+          "bits": 87.74209896, 
+          "trits": 55.35910087 
+        }
       },
       {
         "irrep_ids": [192],
+        "notes": "Maximizes base-2 exponent allocation (exp_2: 46)",
         "exponents": [46, 2, 0, 0, 2, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1],
-        "metrics": { "sum": 56, "logsum": 26.38357651 }
+        "metrics": { 
+          "sum": 56, 
+          "logsum": 26.38357651, 
+          "bits": 87.64434406, 
+          "trits": 55.2974244 
+        }
       },
       {
         "irrep_ids": [191],
         "exponents": [1, 6, 8, 6, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-        "metrics": { "sum": 29, "logsum": 26.327339 }
+        "metrics": { 
+          "sum": 29, 
+          "logsum": 26.327339, 
+          "bits": 87.4575271, 
+          "trits": 55.17955602 
+        }
       },
       {
-        "irrep_ids": [180],
-        "exponents": [44, 0, 0, 6, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1],
-        "metrics": { "sum": 55, "logsum": 26.14297902 }
+        "irrep_ids": [190],
+        "exponents": [1, 2, 9, 1, 2, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        "metrics": { 
+          "sum": 26, 
+          "logsum": 26.31694922, 
+          "bits": 87.42301297, 
+          "trits": 55.15778003 
+        }
       },
       {
-        "irrep_ids": [178, 179],
-        "notes": "Identical valuation twins",
-        "exponents": [0, 4, 0, 6, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "metrics": { "sum": 24, "logsum": 26.13537081 }
+        "irrep_ids": [189],
+        "exponents": [1, 0, 8, 6, 1, 3, 1, 0, 1, 1, 0, 1, 1, 1, 1],
+        "metrics": { 
+          "sum": 26, 
+          "logsum": 26.30816784, 
+          "bits": 87.39384188, 
+          "trits": 55.13937512 
+        }
       },
       {
-        "irrep_ids": [144],
-        "exponents": [28, 1, 0, 1, 1, 2, 1, 0, 1, 1, 1, 1, 1, 1, 1],
-        "metrics": { "sum": 41, "logsum": 25.47326709 }
+        "irrep_ids": [21],
+        "exponents": [0, 0, 0, 5, 0, 2, 0, 1, 1, 1, 0, 1, 1, 1, 1],
+        "metrics": { 
+          "sum": 14, 
+          "logsum": 17.46324841, 
+          "bits": 58.01165554, 
+          "trits": 36.60127953 
+        }
       },
       {
-        "irrep_ids": [127, 128],
-        "exponents": [1, 0, 9, 6, 2, 2, 1, 1, 0, 1, 1, 0, 1, 1, 0],
-        "metrics": { "sum": 26, "logsum": 24.87893243 }
+        "irrep_ids": [20],
+        "exponents": [2, 0, 7, 0, 0, 2, 0, 1, 0, 0, 1, 1, 1, 1, 1],
+        "metrics": { 
+          "sum": 17, 
+          "logsum": 17.3998441, 
+          "bits": 57.80103095, 
+          "trits": 36.46839021 
+        }
       },
       {
-        "irrep_ids": [122, 123, 124],
-        "notes": "Triple identical defect node block",
-        "exponents": [43, 0, 0, 0, 2, 2, 0, 1, 1, 1, 0, 1, 0, 1, 0],
-        "metrics": { "sum": 52, "logsum": 24.74147719 }
+        "irrep_ids": [19],
+        "exponents": [1, 1, 2, 5, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1],
+        "metrics": { 
+          "sum": 16, 
+          "logsum": 16.7807478, 
+          "bits": 55.74443756, 
+          "trits": 35.17082425 
+        }
       },
       {
-        "irrep_ids": [101, 102],
-        "exponents": [46, 0, 0, 0, 2, 3, 0, 0, 1, 0, 1, 0, 1, 0, 0],
-        "metrics": { "sum": 54, "logsum": 23.79718262 }
+        "irrep_ids": [18],
+        "exponents": [0, 0, 2, 5, 1, 2, 1, 0, 1, 0, 1, 0, 0, 1, 1],
+        "metrics": { 
+          "sum": 15, 
+          "logsum": 16.59835841, 
+          "bits": 55.13855313, 
+          "trits": 34.78855374 
+        }
       },
       {
-        "irrep_ids": [54, 55],
-        "exponents": [0, 0, 9, 6, 2, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1],
-        "metrics": { "sum": 22, "logsum": 21.24751439 }
-      },
-      {
-        "irrep_ids": [15, 16],
-        "notes": "Low-dimension twin signatures",
-        "exponents": [0, 0, 9, 6, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-        "metrics": { "sum": 19, "logsum": 15.95330617 }
-      },
-      {
-        "irrep_ids": [2],
-        "notes": "Highly smooth trivial boundary transition",
-        "exponents": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1],
-        "metrics": { "sum": 6, "logsum": 7.328315902 }
+        "irrep_ids": [17],
+        "exponents": [3, 0, 0, 1, 0, 3, 1, 0, 0, 1, 1, 1, 1, 1, 1],
+        "metrics": { 
+          "sum": 14, 
+          "logsum": 16.18121877, 
+          "bits": 53.75284525, 
+          "trits": 33.91426941 
+        }
       },
       {
         "irrep_ids": [1],
-        "notes": "The minimal non-trivial McKay representation; note factors 47, 59, 71",
+        "notes": "Minimal non-trivial McKay node showing foundational prime seed entropy",
         "exponents": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
-        "metrics": { "sum": 3, "logsum": 5.294208218 }
+        "metrics": { 
+          "sum": 3, 
+          "logsum": 5.294208218, 
+          "bits": 17.5870023, 
+          "trits": 11.0963212 
+        }
       }
     ]
   }

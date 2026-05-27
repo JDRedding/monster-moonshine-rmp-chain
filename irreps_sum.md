@@ -32,6 +32,7 @@
 #   OEIS A001379 — Degrees of irreducible representations of Monster group M
 #   Conway & Norton (1979) — Monstrous Moonshine
 #   Borcherds (1992) — Proof of Monstrous Moonshine conject
+```tsv
 order	2	3	5	7	11	13	17	19	23	29	31	41	47	59	71	sum
 192	46	2	0	0	2	0	1	0	1	0	0	1	1	1	1	56
 174	42	2	1	4	0	2	0	0	1	1	0	1	0	1	0	55
@@ -227,3 +228,4 @@ order	2	3	5	7	11	13	17	19	23	29	31	41	47	59	71	sum
 2	2	0	0	0	0	0	0	0	0	0	1	1	0	1	1	6
 1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	3
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+```

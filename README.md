@@ -170,7 +170,7 @@ After RMP-based refinement, meta-introspector becomes:
 
 ## Specific Items
 
-1. **Create `RMP_FRAMEWORK.md`** — Adapt paper's sections 1–8 into the meta-introspector README
+1. **Create `RMP_FRAMEWORK.md`** — Adapt paper's sections 1–8 
 2. **Reorganize Lean4 proofs** — Group by RMP level; add $\mathbb{Z}_2$ twist formalization
 3. **Map Rust binaries** — Tag each program with its RMP level (1–5)
 4. **Prove tensor factorization** — Add Lean4 theorem + computational validation
@@ -181,14 +181,13 @@ After RMP-based refinement, meta-introspector becomes:
 
 **Bottom line:** RMP paper is the theoretical **scaffold**; meta-introspector is a *concrete realization*. Unifying makes meta-introspector not just exploratory but a **rigorous, theoretically grounded platform for verifying Monstrous Moonshine through propagated relational invariants.**
 
+Here's the strategy:
 
-Yes, **absolutely fork it and do the pruning and refactoring**. Here's the strategy:
-
-## Why Fork + Refactor (Not In-Place)
+## Why Fork 
 
 1. **The current repo is exploratory** — it's a working research notebook. Valuable, but chaotic.
 2. **RMP gives you a new organizing principle** — clean separation by propagation level.
-3. **In-place refactoring would be destructive** — you'd lose the exploratory breadth.
+3. **In-place refactoring would be destructive** — lose the exploratory breadth.
 4. **A forked version becomes a reference implementation** — others can compare approaches.
 
 ---

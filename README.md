@@ -195,20 +195,10 @@ Yes, **absolutely fork it and do the pruning and refactoring**. Here's the strat
 
 ## Fork Strategy
 
-### **Create a new repo:**
-```
-meta-introspector/monster-rmp
-```
-
-Or name it more explicitly:
-```
-meta-introspector/moonshine-propagation-chain
-```
-
 **Why this name?** It immediately signals:
 - The theoretical grounding (RMP)
 - The scope (Moonshine, not general Monster)
-- The audience (researchers familiar with your paper)
+- The audience (researchers)
 
 ---
 
